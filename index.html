@@ -1,0 +1,2307 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>sp-eye-D-er</title>
+  <link rel="stylesheet" href="./iso-temp.css">
+
+<style>  
+.mod3d{
+  filter:drop-shadow(-2px 2px 2px);
+}
+.che{
+  opacity:0;
+}
+.expandright {
+
+left: auto;
+right:49px;
+}
+.expandright:focus {
+padding: 6px 0 0 6px;
+width:40vw;
+transform: translate(55vw);
+}
+.reg{
+    display:block;
+    background-image: url(images/book.JPG);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height:60%;
+    filter:drop-shadow(-8px 8px 5px);
+}
+.reg::after{
+  position: absolute;
+  content:'Open Holed trap-door Spider';
+  color:black;
+  font-family: XTypewriter;
+  font-size:20px;
+}
+.closethreed{
+  position:absolute;
+  transform: translateX(-10vw) !important;
+}
+@font-face {
+  font-family:'XTypewriter';
+  src: url('XTypewriterBold-jEBl0.ttf');
+}
+@keyframes animport{
+0%{opacity:1}
+100%{opacity:0}
+
+}
+.skinny{
+  opacity:0;
+}
+
+/*===============================================================================================*/
+
+@media(orientation: portrait) {
+.anm::after{
+content:'port-scr';
+color: #000;}
+
+.anam-one{
+  position:absolute;
+ transform: translateY(-100%);
+  z-index:9999;
+  height:200px;
+}
+}
+
+/*===============================================================================================*/
+.blend {
+  height: 10%;
+  width: 0%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  line-height: 110%;
+  display:none;
+  transition: all 1s ease;
+}     
+.active .blend {
+  display: block;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display:flex;
+  animation: fade-in 1s ease;
+}   
+.blend h2 {
+  font-family: 'XTypewriter';
+}
+.yellow{
+  margin-top:-2vh;
+}
+.blend ref{
+  font-size:0.8em
+}
+.blend i{
+  color:rgb(151, 149, 191);
+}
+.art i{
+  color:rgb(186, 124, 10);
+}
+.art b{
+  
+  text-decoration: underline;
+}
+.art{
+  position:absolute;
+  width:20%;
+  height:50%;
+  background-color: rgb(222, 222, 222);
+  color:black;
+  float:right;
+margin-left:65%;
+z-index:999;
+padding-left:2%;
+padding-right:2%;
+filter:drop-shadow(-2px 2px 2px);
+font-family: XTypewriter;
+text-align: center;
+font-size: 80%;
+line-height: 100%;
+overflow: hidden;
+transform:translateY(80%) translateX(25%);
+}
+hd{
+  font-family: 'XTypewriter';
+  line-height:1em;
+  
+}
+sm{
+  font-size:1vw;
+}
+.anam-one{
+  position:absolute;
+width:30%; height:70%;
+filter:drop-shadow(-5px 5px 5px black);
+border-radius: 10%;
+cursor:pointer;
+margin-top:-500px !important;
+color:white;
+margin-left:13%;
+background-color: rgb(254, 254, 254);
+transition:all 1s ease;
+background-image:url(images/chlg.JPG);background-size:110%;background-repeat:no-repeat;background-position-x: 0%;
+background-position-y: 25%;
+z-index:12; 
+}
+.anam-two{
+position:absolute;
+width:30%; height:70%;
+filter:drop-shadow(-5px 5px 5px);
+border-radius: 10%;
+cursor:pointer;
+margin-left:52%;
+margin-top:-500px !important;
+background-color: rgb(254, 254, 254);
+transition:all 1s ease;
+background-image:url(images/antrev.jpg);background-size:100%;background-repeat:no-repeat;background-position-x: 0%;
+background-position-y: 25%;
+z-index:12; 
+}
+.active .anam-two{
+width:100%; height:85vh;
+filter:drop-shadow(-5px 5px 5px);
+border-radius: 1%;
+cursor:pointer;
+transition:all 1s ease;
+background-image:url(images/bg.jpg);
+background-size:100% 100%;
+background-repeat:no-repeat;
+background-position-x: 92%;
+background-position-y: 0.5vh;
+margin-left:-0.5%;
+margin-top:-700px !important;
+z-index:150;
+position:absolute;
+
+}
+.wish{
+  margin-left:-2.5%;
+  overflow: hidden;
+  padding:2%;
+}
+.active .anam-one{
+height:80%;
+filter:drop-shadow(-5px 5px 5px black);
+border-radius: 1%;
+cursor:pointer;
+transition:all 1s ease;
+background-image:none;
+background-color: white;
+background-position-x: 0%;
+background-position-y: 0%;
+z-index:120;
+position:absolute;
+
+}
+.active .anam-one::after{
+  position: absolute;
+  text-align: center;
+  margin-top:-250px;
+content:' Please adopt me. I need a write up';
+font-size: 2em;
+color:black;
+width:300px;
+margin-left:-150px;
+}
+.ao-text-two{
+opacity:0;
+line-height: 1.2em;
+font-size: 0.8em;
+color:#000;
+}
+.active .ao-text-two{
+opacity:1;
+margin-left:0%;
+font-size: 0.8em;
+padding:3%;
+width:82%;
+color:#000;
+}
+.ao-text{
+margin-top:-1%;
+width:100%;
+opacity:0;
+font-size: 0.5em;
+}
+.active .ao-text{
+opacity:1;
+margin-left:2%;
+margin-top:-1%;
+width:100%;
+padding-right:3%;
+font-size:1.7vw;
+line-height: 1em;
+}
+.anam-sub-head{
+  position:absolute;
+  z-index:14;
+  line-height:1em;
+  width:95vw;
+  font-size:1em;
+  margin-top:-2%;
+  text-align: center;
+  margin-left:-6%;
+}
+.anam-sub-head p{
+  font-size:1.1em;
+  color:rgb(98, 78, 11);
+  text-decoration: underline;
+  display:inline
+}
+.warn{
+  width:110%; height:500px; background-color:white;position:absolute;z-index:1000000000;margin-left:-5vw;text-align: center; color:black; font-size: 2vw;margin-top:-5vh;position:fixed; display:none;
+}
+@keyframes fade-in{
+0%{opacity:0}
+30%{opacity:0}
+100%{opacity:1}
+}
+
+/*==============================   WIDTH  ========================================================================================*/
+
+@media(Min-width:350px){
+  .ag::after{
+  content: 'W-350';
+  }
+}
+@media(Min-width:400px){
+.ag::after{
+  content: 'W-400';
+} 
+.element-item{
+                  transform: scale(0.8);
+                  margin-left:0%;
+                  margin-top: -2%;
+                  height:450px;
+}
+}
+@media(Min-width:500px){
+.ag::after{
+  content: 'W-500';}
+  
+.element-item{
+transform: scale(1.25);
+margin-left:6%;
+margin-top: 0%;
+height:450px;
+}
+.cush{
+  margin-left:15%;
+}
+.brodal{
+  width:100%;
+  margin-left: 1%;
+}
+.brodal-container .ammo{
+  margin-left:5%;
+}
+
+}
+@media(Min-width: 550px ){
+  .reg{
+  height:140%;
+}
+.ag::after{
+content:'W-550';
+}
+.expandright{
+margin-left:-60vw;
+}
+
+.brodal{
+margin-left:-4%;
+width:99%;
+}
+.brodal-close{
+transform: translateX(10vw);
+}
+.wish{
+position: absolute;
+width:90%;
+margin-left:6%;
+margin-top:30%;
+}
+.art{
+position:absolute;
+transform: translateX(40px);
+margin-left:60vw;
+font-size: 95%;
+}
+.element-item{
+transform: scale(1.25);
+margin-left:4%;
+margin-top: 0%;
+height:450px;
+}
+.cush{
+  margin-left:26%;
+}
+
+}
+@media(Min-width: 600px ){
+  .reg{
+  height:140%;
+}
+.ag::after{
+content:'W-600';
+}
+.expandright{
+  transform: translateX(-10vw);
+}
+
+.brodal{
+margin-left:-4%;
+width:99%;
+}
+.brodal-close{
+transform: translateX(10vw);
+}
+.wish{
+position: absolute;
+width:90%;
+margin-left:6%;
+margin-top:30%;
+}
+.art{
+position:absolute;
+transform: translateX(40px);
+margin-left:60vw;
+font-size: 95%;
+}
+.element-item{
+transform: scale(1.25);
+margin-left:4%;
+margin-top: 0%;
+height:450px;
+}
+.cush{
+  margin-left:1%;
+}
+
+}
+@media(Min-width: 700px ){
+.reg{
+height:140%;
+}
+.ag::after{
+content:'W-700';
+}
+.loupebox{
+  margin-left:2%;
+}
+.expandright{
+  transform: translateX(-1vw);
+}
+
+.brodal{
+margin-left:-4%;
+width:99%;
+}
+.brodal-close{
+transform: translateX(10vw);
+}
+.wish{
+position: absolute;
+width:90%;
+margin-left:6%;
+margin-top:30%;
+}
+.art{
+position:absolute;
+transform: translateX(40px);
+margin-left:60vw;
+font-size: 95%;
+}
+.element-item{
+transform: scale(1.25);
+margin-left:6%;
+margin-top: 0%;
+height:450px;
+}
+.cush{
+  margin-left:4%;
+}
+}
+@media(Min-width: 768px ){
+.ag::after{
+content:'W-768';                    
+}
+.expandright{
+  transform: translateX(10vw);
+}
+.searcher:focus {
+transform: translateX(-685px) translateY(30px);
+width: 500px; /* Bar width+1px */
+padding: 0 0px 16px 80px;
+height:50px;
+font-size:2em;
+text-align: center;
+}
+.expandright:focus {
+                  padding: 16px 0 0 26px;
+}
+.loupebox{
+transform: scale(0.2) ;
+margin-left:2%;
+margin-top:-2%;
+}
+
+.element-item{
+transform: scale(1.25);
+margin-left:8%;
+margin-top: 0%;
+height:450px;
+}
+.cush{
+ margin-left: 2.5%;
+ margin-top:-2%                                              
+}
+.ag-brod{
+                      
+height:100%;                      
+transform: scaleY(1.05)translateX(-50%) scaleX(1.2);                       
+}
+.grid{margin-left:-1.5%;
+}                
+.brodal{
+width:99%;
+margin-left:-2%;
+}
+.anam-one{
+margin-left:18%;
+}
+.wish{
+margin-left:-7%;
+}                 
+}
+@media(Min-width: 850px ){
+              .ag::after{
+                  content:'W-850';
+              }
+              .expandright{
+                transform: translateX(15vw);
+                margin-left:-18vw;
+              }
+              .searcher:focus {
+                  transform: translateX(-685px) translateY(30px);
+                  width: 500px; /* Bar width+1px */
+                  padding: 0 0px 16px 80px;
+                  height:50px;
+                  font-size:2em;
+                  text-align: center;
+              }
+              .expandright:focus {
+              padding: 16px 0 0 26px;
+              transform: translateX(15vw);
+              margin-left:50%;
+              }
+              .loupebox{
+                    transform: scale(0.2) ;
+                    margin-left:2%;
+                    margin-top:-1%;
+                  }
+              .element-item{
+                    transform: scale(1.15);
+                    margin-left:6%;
+                    margin-top: 0%;
+                    height:450px;
+              }
+              .cush{
+                    margin-left: 10%;
+                    margin-top:-2%
+              }
+            
+              .scraps{
+                    margin-top:130px;
+                    transform: scaleY(1.4)
+              }
+              .ag-brod{
+                    width:98%;
+                    height:100%;
+                    transform: scaleY(1.05)translateX(-50%) scaleX(1.2);
+              }
+              .grid{margin-left:-1.5%;
+              }
+              .anam-one{
+                margin-left:12%;
+              }
+
+   
+}
+@media(Min-width: 900px ){
+.ag::after{
+                content:'W-900';             
+}
+.loupebox{
+  margin-left:2%;
+
+}
+.expandright{
+                transform:translateX(22vw);
+}
+.element-item{
+                  transform: scale(1.1);
+                  margin-left:2.5%;
+                  margin-top: -2%;
+                  height:450px;
+}
+.cush{
+                  margin-left: 0%;
+                  margin-top:-2%
+}
+.grid{
+                margin-left:0.4%;
+}
+.brodal{
+                  width:99%;
+                    margin-left:-4%;
+}
+.wish{
+  margin-left:-5%;
+}
+.art{
+  margin-left:70%;
+}
+.anam-one{
+  margin-left:15%;
+}
+
+}
+@media(Min-width: 950px ){
+.ag::after{content:'W-950';}
+
+.loupebox{
+  margin-left:1%;
+}
+.expandright{
+transform: translateX(25vw);
+}
+.element-item{
+transform: scale(1.15);
+margin-left:3%;
+margin-top: -2%;
+height:450px;
+}
+.cush{
+margin-left: 2%;
+ margin-top:-2%
+}
+.grid{
+margin-left:0.4%;
+}
+.reg{
+display:block !important;
+opacity:1;
+}
+
+
+}
+@media(Min-width: 1000px ){
+.ag::after{
+content:'W-1000';}
+.expandright{
+  transform: translateX(28vw);
+}
+.element-item{
+transform: scale(1.2);
+margin-left:5%;
+margin-top: -2%;
+}
+.cush{
+                    margin-right:17%;
+}
+.art{
+margin-left:70%;
+}
+.wish{
+              margin-left:-10%;
+       transform:translateX(-17%);
+}
+}
+@media(Min-width: 1100px){
+                  .ag::after{
+                    content:'W-1100';
+                  }
+                
+                .loupebox{
+                  transform: scale(0.25) ;
+                  margin-left:-2%;
+                  margin-top:-4%;
+                }
+                .element-item{
+                  transform: scale(1);
+                  margin-left:-1%;
+                  margin-top: -2%;
+                  height:400px;
+                 }
+                .cush{
+                  margin-left: 5%;
+                }
+                .expandright{
+                  transform: translateX(35vw);
+                }
+                .grid{
+                 margin-left:-0.5%; 
+                }
+                .anam-sub-head{
+                  font-size: 2em;
+                }
+                .brodal{
+                  margin-left:-4%;
+                }  
+
+
+              .art{
+                margin-left:840px;
+
+              }
+
+                
+}
+@media(Min-width: 1200px){
+                  .ag::after{
+                    content:'W-1200';
+                  }
+                
+                .loupebox{
+                  transform: scale(0.3) ;
+                  margin-left:-2%;
+                  margin-top:-3%;
+                }
+                .element-item{
+                  transform: scale(1);
+                  margin-left:-1%;
+                  margin-top: -2%;
+                  height:400px;
+                 }
+                .cush{
+                  margin-left: 7%;
+                }
+      
+              .ag-brod{
+                width:100%; height:100%;
+                transform: scaleY(1) translateX(-44vw) scaleX(1.17)translateY(1vh);
+              }
+              .expandright{
+      transform: translateX(40vw);
+              }        
+              .art{
+                margin-left: 85%;
+              }   
+              
+}
+@media(Min-width: 1250px){
+.ag::after{
+                    content:'W-1250';
+}
+.loupebox{
+transform: scale(0.2) ;
+margin-left:-2%;
+margin-top:-2%;
+}
+.element-item{
+transform: scale(1);
+margin-left:-1%;
+margin-top: -2%;
+height:400px;
+}
+.cush{
+                  margin-left: 7%;
+}
+.ag-brod{
+                width:100%; height:100%;
+                transform: scaleY(1) translateX(-45vw) scaleX(1.17)translateY(1vh);
+}
+.expandright{
+                margin-left:4vw;
+}
+.art{
+margin-left:840px;
+
+}
+
+              
+}
+@media(Min-width: 1300px){
+.ag::after{content:'W-1300';}
+
+.loupebox{
+                    transform: scale(0.25) ;
+                    margin-left:-2%;
+                    margin-top:-2%;
+}            
+.element-item{
+transform: scale(0.9);
+margin-left:2.5%;
+margin-top: -7%;
+height:400px;
+}
+.cush{
+margin-left: 2%;
+}
+.expandright{
+transform: translateX(46vw);
+}
+.expandright:focus {
+	padding: 6px 0 0 6px;
+  width:40vw;
+  border-radius: 0%;
+  transform: translateX(15vw);
+}
+.art{
+margin-left:70%;
+}
+}
+@media(Min-width: 1400px){
+                  .ag::after{
+                    content:'W-1400';
+                  }
+                
+                .loupebox{
+                  transform: scale(0.2) ;
+                  margin-left:-2%;
+                  margin-top:-2%;
+                }
+                .element-item{
+                  transform: scale(1);
+                  margin-left:1%;
+                  margin-top: -2%;
+                  height:400px;
+                 }
+                .cush{
+                  margin-left: 7%;
+                }
+                .brodal{
+                  margin-left:-4vw;
+                 
+                }
+                .ag-brod{
+                  margin-left:-48vw;
+                  margin-top:-4vh;
+                  transform:translateY(-2vh);
+                  width:95vw;
+                }
+                .expandright{
+                  margin-left:18vw;
+                }    
+                .active .anam-two{
+                  width:1300px;
+                }        
+                .active .anam-two{
+                  margin-left:5%;
+                }
+}
+@media(Min-width: 1500px){
+                  .ag::after{
+                    content:'W-1500';
+                  }
+                
+                .loupebox{
+                  transform: scale(0.2) ;
+                  margin-left:-4%;
+                  margin-top:-2%;
+                }
+                .element-item{
+                  transform: scale(1);
+                  margin-left:-1%;
+                  margin-top: -2%;
+                  height:400px;
+                 }
+                .cush{
+                  margin-left: 6.4%;
+                }
+                .brodal{
+                  margin-left:-4vw;
+                 
+                }
+                .ag-brod{
+                  margin-left:-48vw;
+                  margin-top:-4vh;
+                  transform:translateY(-2vh);
+                  width:95vw;
+                }
+                .expandright{
+                  margin-left:18vw;
+                }
+  
+                
+}
+@media(Min-width: 1550px){
+                  .ag::after{
+                    content:'W-1550';
+                  }
+                
+                .loupebox{
+                  transform: scale(0.2) ;
+                  margin-left:-4%;
+                  margin-top:-2%;
+                }
+                .element-item{
+                  transform: scale(1);
+                  margin-left:-1%;
+                  margin-top: -2%;
+                  height:400px;
+                 }
+                .cush{
+                  margin-left: 1.4%;
+                }
+                .brodal{
+                  margin-left:-3vw;
+                 
+                }
+                .ag-brod{
+                  margin-left:-48vw;
+                  margin-top:-4vh;
+                  transform:translateY(-2vh);
+                  width:95vw;
+                }
+                .expandright{
+                  margin-left:46vw;
+                }
+                .active .anam-two{
+
+                }
+}
+@media(Min-width: 1600px ){
+                  .ag::after{
+                    content:'W-1600';
+                  }
+                  .loupebox{
+                    transform: scale(0.25);
+                    margin-left:-5%;
+                  }
+                  .expandright{
+                   
+                   margin-left:27vw;
+                  }
+                  .element-item{
+                    transform: scale(1);
+                    margin-left:-1%;
+                    margin-top: -2%;
+                    height:400px;
+                   }
+                  .cush{
+                    margin-left: 4.5%;
+                  }
+                 .brodal{
+                  margin-left:-2%;
+                 }
+}
+@media(Min-width: 1550px){
+                  .ag::after{
+                    content:'W-1550';
+                  }
+                
+                .loupebox{
+                  transform: scale(0.2) ;
+                  margin-left:-4%;
+                  margin-top:-2%;
+                }
+                .element-item{
+                  transform: scale(1);
+                  margin-left:-1%;
+                  margin-top: -2%;
+                  height:400px;
+                 }
+                .cush{
+                  margin-left: 6.4%;
+                }
+                .brodal{
+                  margin-left:-3vw;
+                 
+                }
+                .ag-brod{
+                  margin-left:-48vw;
+                  margin-top:-4vh;
+                  transform:translateY(-2vh);
+                  width:95vw;
+                }
+                .expandright{
+                  margin-left:46vw;
+                }
+}
+@media(Min-width: 1600px ){
+                  .ag::after{
+                    content:'W-1600';
+                  }
+                  .loupebox{
+                    transform: scale(0.25);
+                    margin-left:-5%;
+                  }
+                  .expandright{
+                    transform: translateX(54vw);
+                  }
+                  .element-item{
+                    transform: scale(1);
+                    margin-left:-1%;
+                    margin-top: -2%;
+                    height:400px;
+                   }
+                  .cush{
+                    margin-left: 4.5%;
+                  }
+                 .brodal{
+                  margin-left:-2%;
+                 }
+}
+@media(Min-width: 1700px ){
+                  .ag::after{
+                    content:'W-1700';
+                  }
+                  .loupebox{
+                    transform: scale(0.35);
+                    margin-left:-5%;
+                  }
+                
+                  .element-item{
+                    transform: scale(1);
+                    margin-left:-1%;
+                    margin-top: -2%;
+                    height:400px;
+                   }
+                  .cush{
+                    margin-left: 4.5%;
+                  }
+                 .brodal{
+                  margin-left: -4%;
+                 }
+                 .expandright{
+                  transform: translateX(60vw);
+                 }
+}
+@media(Min-width: 1750px ){
+                  .ag::after{
+                    content:'W-1750';
+                  }
+                  .loupebox{
+                    transform: scale(0.35);
+                    margin-left:-5%;
+                  }
+                
+                  .element-item{
+                    transform: scale(0.9);
+                    margin-left:-1%;
+                    margin-top: -2%;
+                    height:400px;
+                   }
+                  .cush{
+                    margin-left: 1.5%;
+                  }
+                 .brodal{
+                  margin-left: -4%;
+                 }
+                 .expandright{
+                transform: translateX(60vw);
+                 }
+
+
+}
+/*==============================    HEIGHT     ================================================================*/
+@media(Min-height:1px){
+
+.warn{
+  transition: all 1s ease;
+  display:flex;
+  margin-top:-18vh !important;
+}
+
+}
+
+@media(Min-height:170px){
+
+.am::after{
+                  content:'H 0 to 270';
+                  color:black;
+}
+.anam-one{
+  height:90%;
+  transform: translateY(170%);
+  opacity:0;
+}
+.anam-two{
+  height:90%;
+  transform: translateY(170%);
+  opacity:0;
+}
+.active .anam-two{
+  transform: translateY();
+  background-size: 90% 100%;
+}
+
+.reg::after{
+  height:100%;
+  background-color: white;
+  content:'Your screen is under 270px high! We cant fit a decent picture in here';
+  color:black;
+}
+.warn{
+  transition: all 1s ease;
+  display:flex;
+  margin-top:-7vh;
+}
+
+}
+
+@media(Min-height:270px){
+
+.am::after{
+                  content:'H 0 to 270';
+                  color:black;
+}
+.anam-one{
+  height:90%;
+  transform: translateY(170%);
+  opacity:0;
+}
+.anam-two{
+  height:90%;
+  transform: translateY(170%);
+  opacity:0;
+}
+.active .anam-two{
+  transform: translateY();
+  background-size: 90% 100%;
+}
+
+.reg::after{
+  height:100%;
+  background-color: white;
+  content:'Your screen is under 270px high! We cant fit a decent picture in here';
+  color:black;
+}
+.warn{
+  transition: all 1s ease;
+  display:flex;
+  margin-top:-5vh;
+}
+
+}
+@media(Min-height:299px){
+  .am::after{
+                  content:'H-299';
+                  color:black;
+}
+.anam-one{
+  height:90%;
+  transform: translateY(250%);
+  opacity:0
+}
+.anam-two{
+  height:90%;
+  transform: translateY(250%);
+  opacity:0
+}
+.active .anam-two{
+  transform: translateY();
+  background-size: 90% 100%;
+}
+.reg{
+  height:150%;
+}
+.reg::after{
+  height:100%;
+  background-color: white;
+  content:'Your screen is so tiny. We cant fit a decent picture in here!';
+  color:black;
+}
+.wish{
+  height:90%;
+  transform: translateY(-10%);
+ }
+
+}
+@media(Min-height:300px){
+
+.am::after{
+                  content:'H-300';
+                  color:black;
+}
+.anam-one{
+  height:90%;
+  transform: translateY(170%);
+  opacity:1;
+  transition: all 0.5s ease;
+}
+.anam-two{
+  height:90%;
+  transform: translateY(170%);
+  opacity:1;
+  transition: all 0.5s ease;
+}
+.active .anam-two{
+  transform: translateY(470px);
+  background-size: 90% 100%;
+}
+.active .anam-two hd{
+  opacity:0;
+}
+.reg{
+  height:150%;
+}
+.reg::after{
+  height:100%;
+  background-color: white;
+  content:'';
+  color:black;
+}
+.wish{
+  height:300px;
+  transform: translateY(10%);
+ }
+ brodal-page{
+  max-height:90%
+ }
+
+}
+@media(Min-height:350px){
+                .am::after{
+                  content:'H-350';
+                  color:black;
+                }
+                .ag-brod{
+                  height:450px;
+                }
+ .wish{
+  height:380px;
+  margin-top: 150px;
+  transform:translateY(50px)
+ }
+ .art{
+ 
+ margin-top:100px;
+ height:450px;
+}
+.anam-one{
+  height:90%;
+  transform: translateY(130%);
+  transition: all 0.5s ease;
+}
+.anam-two{
+  height:90%;
+  transform: translateY(130%);
+  transition: all 0.5s ease;
+}
+.active .anam-two{
+  transform: translateY(420px);
+  background-size: 90% 100%;
+}
+.art{
+height:40%;
+margin-top:30%;
+}
+.wish{
+  height:300px;
+  transform: translateY(52%);
+ }
+ brodal-page .am-mod{
+  max-height:90%
+ }
+
+}
+@media(Min-height:400px){
+.am::after{
+                  content:'H-400';
+                  color:black;}
+.ag-brod{
+                  height:450px;}
+ 
+.wish{
+  height:360px;
+  transform:translateY(160px)
+}
+
+.anam-one{
+  height:90%;
+  transform: translateY(80%);
+  transition: all 0.5s ease;
+}
+.anam-two{
+  height:90%;
+  transform: translateY(80%);
+  transition: all 0.5s ease;
+}
+.active .anam-two{
+  transform: translateY(380px);
+  background-size: 90% 100%;
+}
+.art{
+height:40%;
+margin-top:30%;
+}
+.warn{
+  transition: all 1s ease;
+  display:none;
+}
+}
+@media(Min-height:450px){
+                .am::after{
+                  content:'H-450';
+                  color:black;
+                }
+                .ag-brod{
+                  height:450px;
+                }
+ .wish{
+  height:380px;
+  margin-top: 150px;
+  transform:translateY(50px)
+ }
+
+.anam-one{
+  height:90%;
+  transform: translateY(60%);
+  transition: all 0.5s ease;
+}
+.anam-two{
+  height:90%;
+  transform: translateY(60%);
+  transition: all 0.5s ease;
+}
+.active .anam-two{
+  transform: translateY(320px);
+  background-size: 90% 100%;
+
+}
+.art{
+height:50%;
+margin-top:40%;
+}
+.wish{
+  height:90%;
+  transform: translateY(21%);
+ }
+}
+@media(Min-height:500px){
+.am::after{
+                  content:'H-500';
+                  color:black;}
+.ag-brod{
+                  height:650px;
+                  margin-top:-13%;}
+ .wish{
+  height:90%;
+  transform: translateY(20%);
+  transition: all 0.5s ease;
+ }
+ .anam-one{
+  height:90%;
+  transform: translateY(40%);
+  transition: all 0.5s ease;
+}
+.anam-two{
+  height:90%;
+  transform: translateY(40%);
+}
+.active .anam-two{
+  transform: translateY(280px);
+}
+.ammo{
+  height:100vh !important;
+  margin-top:27vh!important;
+}
+.am-mod{
+  height:100vh !important;
+}
+.am-frame{
+  height:115% !important;
+}
+}  
+@media(Min-height:550px){
+.am::after{
+content:'H-550';
+color:black;}
+
+ .anam-two{
+height:90%;
+transform: translateY(40%);
+}
+.active .anam-two{
+  transform: translateY(200px);
+}
+.brodal{
+  margin-top:12vh !important;
+}
+
+}
+@media(Min-height:620px){
+.am::after{
+                  content:'H-620';
+                  color:black;}
+.ag-brod{
+height:650px;
+margin-top:-13%;
+}
+.wish{
+height:550px;
+transform: translateY(80px);
+}
+ .anam-one{
+  height:90%;
+  transform: translateY(5%);
+  transition: all 0.5s ease;
+}
+.anam-two{
+  height:90%;
+  transform: translateY(5%);
+}
+.active .anam-two{
+transform: translateY(120px);
+transition: all 0.5s ease;
+ 
+}
+.art{
+  height:30%;
+}
+
+}  
+@media(Min-height:700px){
+.am::after{
+content:'H-700px';}
+.ag-brod{
+height:700px;}
+.wish{
+margin-top:10%;
+height:550px;
+}
+.anam-one{
+  height:90%;
+  transform: translateY(-15%);
+}
+.anam-two{
+  height:90%;
+  transform: translateY(-15%);
+}
+.active .anam-two{
+  transform: translateY(70px);
+
+}
+
+}
+@media(Min-height:750px){
+.am::after{
+      content:'H-750px';}
+.ag-brod{
+height:700px;}
+.element-item{
+  height:380px;
+}
+.brodal{
+  margin-top:7%;
+}
+.wish{
+margin-top:10%;
+ height:600px;
+}
+.art{
+  margin-top:55%;
+  height:40%;
+}
+.anam-one{
+  height:90%;
+  transform: translateY(-25%);
+  transition: all 0.5s ease;
+}
+.anam-two{
+  height:90%;
+  transform: translateY(-25%);
+  transition: all 0.5s ease;
+}
+.active .anam-two{
+transform: translateY(5px);
+background-size: 100% 90%;
+background-position-y:35% ;
+height:700px;
+}
+
+}
+@media(Min-height:800px){
+.am::after{
+      content:'H-800px';}
+.ag-brod{
+height:700px;}
+.element-item{
+  height:400px;
+}
+.brodal{
+margin-top:6.5% !important;
+}
+.wish{
+margin-top:8%;
+height:650px;
+}
+.art{
+  margin-top:55%;
+  height:40%;
+}
+.anam-one{
+  height:90%;
+  transform: translateY(-25%);
+  transition: all 0.5s ease;
+}
+.anam-two{
+  height:90%;
+  transform: translateY(-25%);
+  transition: all 0.5s ease;
+}
+.active .anam-two{
+transform: translateY(-45px);
+height:750px;
+}
+
+
+}
+@media(Min-height:850px){
+.am::after{
+content:'H-850px';
+}
+.ag-brod{
+height:700px;
+}
+
+.loupebox{
+  margin-left:2%;
+}
+.element-item{
+  height:450px;
+}
+.brodal{
+  margin-top:3.5% !important;
+}
+.wish{
+margin-top:10%;
+height:650px;
+}
+.art{
+  margin-top:55%;
+  height:35%;
+}
+.anam-one{
+  height:90%;
+  transform: translateY(-25%);
+  transition: all 0.5s ease;
+}
+.anam-two{
+  height:90%;
+  transform: translateY(-25%);
+  transition: all 0.5s ease;
+}
+.active .anam-two{
+transform: translateY(-85px);
+background-size: 100% 90%;
+background-position-y:20% ;
+}
+
+}
+@media(Min-height:900px){
+.am::after{
+content:'H-900px';}
+.ag-brod{
+height:950px;
+transform:translateY(-5%) translateX(-52%);
+}
+.brodal{
+  height:900px !important;
+}
+
+
+}
+
+	
+
+/*+++++++++++++++++++++++++++*/
+.expandright {
+background-color: rgb(245, 245, 211);
+left: auto;
+right:49px;
+}
+.expandright:focus {
+padding: 6px 0 0 6px;
+width:40vw;
+transform: translate(25vw);
+background-color: rgb(245, 245, 211);
+}
+.tac{
+margin-top:-3300px;
+width:40px;
+height:40px;
+transform: translateY(-10%);
+transition:  all 1s ease;
+opacity:0;
+}
+.cbox:hover .tac {
+position:absolute;
+margin-top:0px;
+transform: translateY(10%);
+opacity:1;
+z-index:999999;
+animation: tacky 1s ease both;
+animation-fill-mode: both;
+}
+@keyframes tacky {
+  0%{
+    margin-top:-150vh;
+    transform: translateY(-50%) translateX(-1100px);
+  }
+  100%{
+    margin-top:20vh;
+    transform: translateY(-20vh) translateX(55px);
+  }
+ 
+}
+.aggy::after{
+  content: 'vassilvassilev-iNat';
+  color:black;
+  writing-mode: vertical-lr;
+text-orientation: mixed;
+font-size:9px;
+}
+.models{
+  box-shadow: -4px -2px 2px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: -4px 2px 2px 0px rgba(0,0,0,0.75);
+-moz-box-shadow:-4px -2px 2px 0px rgba(0,0,0,0.75);   
+width:700px;
+height:600px;
+font-size:2px;
+
+}
+.am-frame{
+  border:none;width:95vw; height:100vh;overflow:visible; margin-top:-1%; margin-left:-6%; filter:drop-shadow(-2px 2px 6px rgba(0, 0, 0, 0.777))
+}
+
+</style>
+
+</head>
+
+
+<!--==============================    BODY    ================================================================*-->
+<body >
+<div class="searcher-container"style="left:700px;position:fixed;z-index:1001;">
+<p><input class="searcher expandright" type="text" id="quicksearch" autocomplete="off" placeholder="&#9906;" ></p> 
+</div>
+<!--=========  LOUPE  MENU  ======================================-->
+<div class="loupebox button-group"  id="filters" >
+  <div class ="lou" id="lou" >
+  <input name="loupeCenterChkBox" type="checkbox" class="loupeCenterChkBox" id="loupeCenterChkBox" style="background-image:url(nav/morphu.svg); height:700px">
+  <label for="loupeCenterChkBox">  <div class="Menu-container">
+    <div class="line" style="background-image: url(nav/bar.svg);top:380px;left:380px" id="active">
+    
+    <div class="two" style="background-image: url(nav/bar.svg);top:30px;left:0px" id="active2">
+    </div>
+    <div class="three" style="background-image: url(nav/bar.svg);top:60px;left:0px" id="active3">
+    </div></div>
+  </div></label>
+  <object id="navnav" class="navnav"data="nav/nav4.svg" type="image/svg+xml"width="320px" height="390px"></object>
+            
+  <!--  BLANK  -->                   
+  <div fetchpriority="low" loading="lazy" class="paddle"><img src="" width="150px"style="filter: drop-shadow(-6px 0px 2px rgba(0, 0, 0, 0.281));pointer-events: none;"></div>
+            
+  <!--  EXIT-->       
+  <div fetchpriority="low" loading="lazy" class="paddle">
+    
+    <img src="nav/swing7.svg" width="150px" style="filter: drop-shadow(-8px 4px 6px rgba(0, 0, 0, 0.68));pointer-events: none;">
+  
+ 
+        <p class="wtext"> Exit</p>
+      </button> 
+  </div>
+            
+  <!--  THREE SEARCH -->
+  <div class="paddle">   
+  <span style="display:block;transform: scale(1.55, 1.55); position:absolute; z-index: 25;box-sizing:border-box; width:100%;top:-80px;left:27px;">
+             
+  <object class="showsearch" fetchpriority="low" loading="lazy" class="top" data="nav/search.svg" type="image/svg+xml" style="transform: rotate(-335deg); top:105px; left:-20px; cursor:pointer;"> </object>
+  </span>
+                
+<img fetchpriority="low" loading="lazy" src="nav/swing3.svg" width="150px" style="filter: drop-shadow(-6px 0px 2px rgba(0, 0, 0, 0.605));pointer-events: none;">
+      </div>
+            
+  <!--  FOUR  SHOW ALL====================================-->     
+  <div class="paddle"> 
+  <span style="display:block;transform: scale(1.65, 1.65); position:absolute; z-index: 25;box-sizing:border-box; width:100%;top:-80px;left:27px;">
+      <button class="btn button is-checked" data-filter="*"  style="position:absolute; width:40px;border-radius: 50%; height:40px; z-index:9999999;cursor:pointer; opacity:0; top:130px; left:10px;"> SH</button> 
+      <object class="four" data="nav/showall.svg" type="image/svg+xml" width="290px" height="290px" style="position:absolute;z-index:999999;
+      transform: rotate(-293deg);top:-41px;left:-60px;"> </object>
+      </span>     
+  <img fetchpriority="low" loading="lazy" src="nav/swing3.svg" width="150px" style="filter: drop-shadow(-6px 0px 2px rgba(0, 0, 0, 0.783));pointer-events: none;">
+  </div>
+            
+  <!-- FIVE BODY SIZE ================================================-->
+  <div fetchpriority="low" loading="lazy" class="paddle" style="padding-left:20px;">
+  <span style="display:block;transform: scale(2.3, 2.3); position:absolute; z-index: 25;box-sizing:border-box; width:100%; top:-80px; left:27px;">
+      <button  fetchpriority="low" loading="lazy" class="btn" onclick="filterSelection('sm')" style="transform: rotate(170deg);opacity:0;top:135px;left:20px;"> SM</button> 
+      <button fetchpriority="low" loading="lazy" class="btn" onclick="filterSelection('med')" style="transform: rotate(170deg); opacity:0;top:175px; left:10px;"> ME</button> 
+      <button fetchpriority="low" loading="lazy" class="btn" onclick="filterSelection('lg')" style="transform: rotate(170deg); opacity:0; top:230px; left:-10px;"> LA</button> 
+
+      <object fetchpriority="low" loading="lazy" class="four" data="nav/three.svg" type="image/svg+xml" width="290px" height="290px" style="transform: rotate(-265deg); top:-52px; left:5px;"> </object>
+      </span>
+  <img fetchpriority="low" loading="lazy" src="nav/swing3.svg" width="150px" style="filter: drop-shadow(-6px 0px 2px rgba(0, 0, 0, 0.578));pointer-events: none;">
+  </div>
+       
+                
+  <!--  SIX  EVEN ODD EYES=======================================-->
+  <div fetchpriority="low" loading="lazy" class="paddle" style="padding-top: 20px;padding-left:30px">              
+  <span style="display:block;transform: scale(2.1, 2.1); position:absolute; z-index: 55;box-sizing:border-box; width:100%;top:-60px;left:27px;">
+      
+  <button  class="btn" data-filter=".even" style="transform: rotate(170deg);opacity:0;top:135px;left:-10px;"> EV</button> 
+      
+  <button fetchpriority="low" loading="lazy" class="btn button" data-filter=".odd" style="position:absolute; transform: rotate(170deg) ;opacity:0; top:170px; left:-60px;"> OD</button> 
+  <button  class="btn button" data-filter=".six" onclick="filterSelection('six')" style="transform: rotate(-20deg);opacity:0;transform: rotate(170deg); border:none; cursor:pointer; top:190px; left:-80px;position:absolute"></button>
+  <object class="evenodd" data="nav/two.svg" type="image/svg+xml" width="400px" height="400px" style="z-index:20; transform: rotate(-222deg); top:-85px; left:114px;"></object><!--left lower number goes right and downward--><!--top is opposite to normal and a little left-->
+  </span>         
+  <img fetchpriority="low" loading="lazy" src="nav/swing3.svg" style="padding-left:10px;transform: rotate(10deg);pointer-events: none;" width="150px">    
+  </div>      
+  
+  
+
+  
+  </div>
+</div>
+
+
+
+
+<!--=   MODALS   ======================================-->
+<div class="bodybag">
+
+
+<!--=   AGELENIDAE   ======================================-->
+
+<!--AGEL MODAL 1-->
+<div  fetchpriority="low" loading="lazy" class="brodal-page brodal " id="brodal-ag" style="margin-left:2%;width:90%;">
+<div class="brodal-container" style="width:90%;margin-top:2%;margin-left:2%;">
+<embed class="ag-brod" src="ag -test/ag.html" style="position:absolute;margin-top:1%;"></embed>
+<div class="brodal-close">X</div>
+</div></div>
+
+<!--AGEL MODAL 2_GALLERY-->
+<div  fetchpriority="low" loading="lazy" class="brodal-page brodal" id="brodal-ag-gal">
+<div class="brodal-container">
+<div class="brodal-close">X</div>
+</div></div>
+
+
+<!--=   AMAUROBIIDAE   ======================================-->
+
+<div  fetchpriority="low" loading="lazy" class="brodal" id="brodal-am" style="margin-left:10vw; width:100%; height: 100vh !important;margin-top:-4vh !important;">
+
+  <iframe class="am-frame" scrolling="no" src="htmls/AM-MOD/AM-NEW/sidebar.html"></iframe>
+  <div class="brodal-close" style="margin-left:87vw !important;position: absolute; z-index: 9999999 !important;margin-top:90vh;">X</div>
+  </div>
+
+
+
+
+
+
+<!--=   ANAMIDAE --- OPEN-HOLED TRAP-DOOR   ======================================-->
+
+<!--ANAM MODAL ONE 3D-->
+<div  fetchpriority="low" loading="lazy" class="brodal-page brodal" id="brodal-anam-three-d">
+<div class="brodal-container mod3d" style="height:90vh;">
+<div class="brodal-header"style="margin-top:-5%;padding-top:1%;">Anamidae 3D</div> 
+<embed src="https://sketchfab.com/models/bfa36cf5a7af4e21be3c95a44cd79f07/embed" style="height:80vh; width:100%"></embed>
+<div class="brodal-close closethreed">X</div>
+</div>
+</div>
+
+
+<!--ANAM MODAL TWO-->
+<div  fetchpriority="low" loading="lazy" class="brodal-page brodal" id="brodal-anam" style="height:140%;margin-top:4%">
+<div class="anam-container brodal-container " >  
+<div class="reg"><object class="skinny" data="images/ls.svg"></object></div>
+
+<!--CARD ONE CHENISTONIA TREVALLYNIA-->
+
+<div onclick="this.classList.toggle('active')" >
+<div class="anam-one"><hd>Chenistonia trevallynia Hickman, 1926</hd>
+<div class="blend">
+<embed src="" style="width:80%"></embed>
+</div></div></div>
+
+
+<!--CARD TWO - ANAME TASMANICA-->
+
+<div onclick="this.classList.toggle('active')" >
+<div class="anam-two">  
+<hd style="background-color:white;border-radius:10%;">Aname Tasmanica, </hd><hd style="background-color:white;border-radius:10%;">Hogg 1902 </hd>
+<div class="blend" style="margin-top:-20%;"> 
+<span class="art"><br><b>Links</b><br>
+<p> <a  "target="popup" onclick="window.open('https://biodiversity.org.au/afd/taxa/Aname_tasmanica','popup','width=400,height=400'); return false;" ><i>Biodiversity.org.au</i></a> <br><br>    
+    <a  "target="popup" onclick="window.open('https://www.itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&search_value=850689#null','popup','width=400,height=400'); return false;" >ITIS</a><br><br>    
+    <a  "target="popup" onclick="window.open('https://www.biodiversitylibrary.org/item/98459#page/177/mode/1up','popup','width=400,height=400'); return false;" ><i>'Hogg's 1902 description'</i></a><br><br>    
+    <a  "target="popup" onclick="window.open(' https://animaldiversity.org/accounts/Aname_tasmanica/classification/','popup','width=400,height=400'); return false;" >Animal Diversity</a><br><br> 
+    <a  "target="popup" onclick="window.open('https://www.sciencedirect.com/science/article/abs/pii/S1055790321000609','popup','width=400,height=400'); return false;" ><i>Science direct</i></a>
+    <br><br><a  "target="popup" onclick="window.open('https://www.gbif.org/species/2155063','popup','width=400,height=400'); return false;" >GBIF</a></p>
+</span>
+<embed  class="wish" src="htmls/aname-tas.html" ></embed>
+</div></div></div>
+
+
+<div class="brodal-close" style="margin-left:95%;">X</div>
+</div>
+</div>
+
+
+
+<!--ANAPIDAE MODAL -->
+<div  fetchpriority="low" loading="lazy" class="brodal-page brodal" id="brodal-anam">
+  <div class="brodal-container">
+  
+    <embed  fetchpriority="low" loading="lazy" src="htmls/anap/anap.html" style="position:absolute; width:100%; height:100%;margin-left:-50%;margin-top:1%; transform:scale(1.1) "></embed>
+    <div class="brodal-header">
+      Anapidae</div> 
+  <div class="brodal-close" >X</div>
+</div>
+</div>
+</div>
+
+
+<!--ANYPHAENIDAE MODAL -->
+<div  fetchpriority="low" loading="lazy" class="brodal-page brodal" id="brodal-one">
+
+  <div class="brodal-container">
+   
+      <div class="bro-baby item "></div>
+
+
+
+
+     
+    <div class="brodal-header">
+      Anyphaenidae</div> 
+  <div class="brodal-close">X</div>
+</div>
+</div>
+</div>
+
+
+<!--OXYOPIDAE MODAL -->
+<div  fetchpriority="low" loading="lazy" class="brodal-page brodal" id="brodal-oxy">
+
+  <div class="brodal-container">
+  <embed  fetchpriority="low" loading="lazy" src="htmls/oxy2/oxy-3d.html" style="width:100%; height:120%;background-color: white;filter:drop-shadow(-2px 2px 2px)"> </embed></div>
+      <div class="bro-baby item "></div>
+  <div class="brodal-close" style="margin-left:90% !important;">X</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+<!--  MAIN ================================================================================================================== -->
+<!--  MAIN ================================================================================================================== -->
+<div class="warn"><br><br>......................This screen has gotten very narrow minded, please broaden its horizons......................................</div>
+<div class="grid" style="width:100%; position:absolute;">
+  <div class="cush">
+
+
+<!--====AGEL=================================-->
+<div class="element-item med even" ontouchstart="this.classList.toggle('hover');" >
+<div class="cbox ag">
+<div class="front" fetchpriority="low" loading="lazy" style="background-image:url(buttons/ag.svg)" >
+<div class="inner" >
+<h3 class="name">Ageleniade</h3>
+<p class="symbol">funnel weaver</p>
+<p class="number"> Tegenaria Domestica</p>
+<p class="weight"> medium brown web</p>
+</div></div>
+<div fetchpriority="low" loading="lazy" class="back aggy" style="background-image:url(images/ag-card2.JPG)">
+
+  <div class="hidebut">
+  <button class="brodal-trigger pinpaper" data-target="brodal-ag" style="margin-top:-20px;">Show me more</button>  
+  <img class="pinpaper2" src="images/ag-sm.JPG" style="height:100px; width:100px;margin-top:270px;margin-left:100px;position:absolute;">
+
+</div>
+ 
+<div class="inner">
+
+</div></div>
+</div></div>
+
+
+<!--====AM=================================-->
+
+<div class="element-item even med am-flex" ontouchstart="this.classList.toggle('hover');" >
+<div class="cbox am" >
+<div class="front" fetchpriority="low" loading="lazy" style="background-image:url(buttons/am.svg)">
+<div class="inner" >
+<h3 class="name">Amaurobiidae</h3>
+<p class="symbol">Hackle hackled mesh weaver </p>
+<p class="number"> Dardurus Daviesa  Oztira Storenosoma Tanganoides Tasmabrochus Tasmarubrius  Teeatta </p>
+<p class="weight"> medium </p>
+</div></div>
+<div fetchpriority="low" loading="lazy" class="back" style="background-image:url(images/amaur.JPG); background-size: 110%;" > 
+
+  <div class="hidebut"> <button class="brodal-trigger pinpaper2" data-target="brodal-am"  style="margin-top:310px;margin-left:10px;">Show me more</button><img src="images/am-sm.JPG" class="pinpaper"style="margin-top:-15px;margin-left:130px;width:100px; height:70px;position:absolute;" ></div>
+
+
+<div class="inner">
+
+</div></div>
+</div></div>
+
+
+<!--===ANAM==================================-->
+
+<div class="element-item lg even " ontouchstart="this.classList.toggle('hover');" >
+<div class="cbox anm" >
+<div  class="front" fetchpriority="low" loading="lazy" style="background-image:url(buttons/anam.svg); z-index:9;">
+<div class="inner" >
+<h3 class="name">Anamidae</h3>
+<p class="symbol">open hole holed trapdoor Nemesiidae Stanwellia pexa</p>
+<p class="number">mygalomorph Aname tasmanica chenistonia trevallynia</p>
+<p class="weight">large black brown</p>
+</div></div>
+<div class="back" style="background-image:url(images/anam.JPG); background-size: 115%;" >  <img class="tac" src="images/tac.png" style="margin-left:-45px;">
+  
+  <div class="hidebut"> <button class="brodal-trigger pinpaper2" data-target="brodal-anam"  style="margin-top:310px;margin-left:10px;">Show me more</button><img class="pinpaper5" src="images/anam-sm.JPG" style="margin-top:-55px;margin-left:130px;width:100px; height:70px;position:absolute;"></div>
+
+  
+<div class="inner">
+</div></div>
+</div></div>
+
+<!--====ANAP=================================-->
+
+<div class="element-item odd sm" ontouchstart="this.classList.toggle('hover');" style="z-index:24;">
+<div class="cbox" >
+<div class="front" fetchpriority="low" loading="lazy" style="background-image:url(buttons/anap.svg);z-index:9;">
+<div class="inner" >
+<h3 class="name">Anapidae</h3>
+<p class="symbol">Raveniella Tasmanapis Olgania 	Micropholcomma</p>
+<p class="number">Holarchaea Hickmanapis</p>
+<p class="weight">	Eterosonycha 	Epigastrina Acrobleps</p>
+</div></div>
+<div fetchpriority="low" loading="lazy" class="back" style="background-image:url(images/anap-card-sm.JPG);background-size:90%;">
+<button class="brodal-trigger pinpaper" data-target="brodal-anam" style="z-index:99;margin-top:-20px">Show me more </button>
+
+<div class="inner">
+</div></div>
+</div></div>
+
+<!--====ANY=================================-->
+
+<div class="element-item even med" ontouchstart="this.classList.toggle('hover');" >
+<div class="cbox patterntwo" >
+<div class="front" fetchpriority="low" loading="lazy" style="background-image:url(buttons/any1.svg); z-index:9;">
+<div class="inner" >
+  
+<h3 class="name">Anyphaenidae</h3>
+<p class="symbol">Amaurobioides</p>
+<p class="number"></p>
+<p class="weight"></p>
+</div></div>
+<div fetchpriority="low" loading="lazy" class="back" style="background-image:url(images/any-card-sm.JPG);background-size:90%;">
+  <button class="brodal-trigger pinpaper3" data-target="brodal-anam" style="z-index:99;">Show me more </button>
+
+<div class="inner">
+</div></div>
+</div></div>
+
+
+
+<!--=====ARAN================================-->
+<div class="element-item sm med odd " ontouchstart="this.classList.toggle('hover');" >
+<div class="cbox" >
+<div class="front" fetchpriority="low" loading="lazy" style="background-image:url(buttons/araneidae.svg);z-index:8;">
+<div class="inner" >
+<h3 class="name">Araneidae</h3>
+<p class="symbol">orb weaver garden</p>
+<p class="number"></p>
+<p class="weight"></p>
+</div></div>
+<div fetchpriority="low" loading="lazy" class="back"  >
+  <div class="hidebut"> <button class="brodal-trigger pinpaper2" data-target="brodal-aran" style="margin-left:20px;margin-top:30px;">Show me more</button></div>
+
+<div class="inner">
+</div></div>
+</div></div>
+
+<!--======ARKY===============================-->
+<div class="element-item sm odd " ontouchstart="this.classList.toggle('hover');" >
+<div class="cbox arky">
+<div class="front" fetchpriority="low" loading="lazy" style="background-image:url(buttons/ark.svg); background-color:rgb(221, 217, 202);z-index:9;">
+<div class="inner" >
+<h3 class="name">Arkyidae</h3>
+<p class="symbol">Triangular triangle</p>
+<p class="number">11</p>
+<p class="weight">22.99</p>
+</div></div>
+<div class="back"  >
+  <object class="infobtn" type="image/svg+xml" data="images/3dbtn.svg" style="position:absolute; z-index:999;"></object>
+<div class="inner">
+</div></div>
+</div></div>
+
+<!--=====================================-->
+<div class="element-item sm med even" ontouchstart="this.classList.toggle('hover');" >
+<div class="cbox" >
+<div class="front" fetchpriority="low" loading="lazy" style="background-image:url(buttons/che.svg)">
+<div class="inner" >
+<h3 class="name">Cheiracanthidae</h3>
+<p class="symbol">prowling</p>
+<p class="number">11</p>
+<p class="weight">22.99</p>
+</div></div>
+<div fetchpriority="low" loading="lazy" class="back" >
+  <object class="infobtn"  type="image/svg+xml" data="images/3dbtn.svg" style="position:absolute; z-index:999;"></object>
+<div class="inner">
+</div></div>
+</div></div>
+  
+  
+<!--====CHEIR=================================-->
+<div class="element-item odd med" ontouchstart="this.classList.toggle('hover');" >
+<div class="cbox" >
+  <div class="front" fetchpriority="low" loading="lazy" style="background-image:url(buttons/corin.svg); background-color:rgb(203, 203, 201);">
+    <div class="inner" >
+  <h3 class="name">Corinnidae</h3>
+  <p class="symbol">ant mimic swift</p>
+  <p class="number">20</p>
+  <p class="weight">40.078</p>
+</div></div>
+<div fetchpriority="low" loading="lazy" class="back" >
+  <div class="inner">
+</div></div>
+</div></div>
+
+<!--======   CYCLOC===============================-->
+<div class="element-item odd med" ontouchstart="this.classList.toggle('hover');" >
+  <div class="cbox" >
+    <div class="front" fetchpriority="low" loading="lazy" style="background-image:url(buttons/cyc2.svg); background-color:rgb(195, 192, 167);">
+      <div class="inner" >
+    <h3 class="name">Cycloctenidae</h3>
+    <p class="symbol">Ca</p>
+    <p class="number">20</p>
+    <p class="weight">40.078</p>
+  </div></div>
+  <div fetchpriority="low" loading="lazy" class="back" >
+    <div class="inner">
+  </div></div>
+  </div></div>
+<!--=========  DIEN============================-->
+<div class="element-item odd med" ontouchstart="this.classList.toggle('hover');" >
+  <div class="cbox" >
+    <div class="front" fetchpriority="low" loading="lazy" style="background-image:url(buttons/dein.svg)">
+      <div class="inner" >
+    <h3 class="name">Deinopidae</h3>
+    <p class="symbol">Ca</p>
+    <p class="number">20</p>
+    <p class="weight">40.078</p>
+  </div></div>
+  <div fetchpriority="low" loading="lazy" class="back">
+    <div class="inner">
+  </div></div>
+  </div></div>
+<!--===========DESID==========================-->
+<div fetchpriority="low" loading="lazy" class="element-item even med" ontouchstart="this.classList.toggle('hover');" >
+  <div class="cbox" >
+    <div class="front" fetchpriority="low" loading="lazy" style="background-image:url(buttons/des.svg)">
+      <div class="inner" >
+    <h3 class="name">Desidae</h3>
+    <p class="symbol">Badumna Paratheuma Desis Corasoides Inola Cambridgea</p>
+    <p class="number">longinqua longiqua australis angusi cowanae nebula mouldsi nimbus occidentalis terania stellaris fasciata subtilis motumae</p>
+    <p class="weight"></p>
+  </div></div>
+  <div fetchpriority="low" loading="lazy" class="back" >
+    <div class="inner">
+  </div></div>
+  </div></div>
+<!--=============DYSDERID========================-->
+<div fetchpriority="low" loading="lazy" class="element-item six med even" ontouchstart="this.classList.toggle('hover');" >
+  <div class="cbox" >
+    <div class="front" fetchpriority="low" loading="lazy" style="background-image:url(buttons/dys.svg)">
+      <div class="inner" >
+    <h3 class="name">Dysderidae</h3>
+    <p class="symbol">Ca</p>
+    <p class="number">20</p>
+    <p class="weight">40.078</p>
+  </div></div>
+  <div fetchpriority="low" loading="lazy" class="back" >
+    <div class="inner">
+  </div></div>
+  </div></div>
+<!--==========GNAPH===========================-->
+<div class="element-item med odd" ontouchstart="this.classList.toggle('hover');" >
+  <div class="cbox" >
+    <div class="front" fetchpriority="low" loading="lazy" style="background-image:url(buttons/gnaph.svg); background-color:rgb(221, 217, 202);">
+      <div class="inner" >
+    <h3 class="name">Gnaphosidae</h3>
+    <p class="symbol">Ca</p>
+    <p class="number">20</p>
+    <p class="weight">40.078</p>
+  </div></div>
+  <div fetchpriority="low" loading="lazy" class="back"  >
+    <div class="inner">
+  </div></div>
+  </div></div>
+<!--==========GRAD===========================-->
+<div fetchpriority="low" loading="lazy" class="element-item med even" ontouchstart="this.classList.toggle('hover');" >
+  <div class="cbox" >
+    <div class="front" fetchpriority="low" loading="lazy" style="background-image:url(buttons/grad.svg)">
+      <div class="inner" >
+    <h3 class="name">Gradungulidae</h3>
+    <p class="symbol">Ca</p>
+    <p class="number">20</p>
+    <p class="weight">40.078</p>
+  </div></div>
+  <div fetchpriority="low" loading="lazy" class="back" >
+    <div class="inner">
+  </div></div>
+  </div></div>
+<!--===========HAHN==========================-->
+
+<div fetchpriority="low" loading="lazy" class="element-item odd med" ontouchstart="this.classList.toggle('hover');" >
+  <div class="cbox" >
+    <div class="front" fetchpriority="low" loading="lazy" style="background-image:url(buttons/hahn.svg)">
+      <div class="inner" >
+    <h3 class="name">Hahnidae</h3>
+    <p class="symbol">Ca</p>
+    <p class="number">20</p>
+    <p class="weight">40.078</p>
+  </div></div>
+  <div fetchpriority="low" loading="lazy" class="back" >
+    <div class="inner">
+      
+  </div></div>
+  </div></div>
+<!--============HERS=========================-->
+
+<div fetchpriority="low" loading="lazy" class="element-item odd med" ontouchstart="this.classList.toggle('hover');" >
+  <div class="cbox" >
+    <div class="front" fetchpriority="low" loading="lazy" style="background-image:url(buttons/hers.svg); background-color:rgb(197, 205, 190);">
+      <div class="inner" >
+    <h3 class="name">Hersiliidae</h3>
+    <p class="symbol">Ca</p>
+    <p class="number">20</p>
+    <p class="weight">40.078</p>
+  </div></div>
+  <div fetchpriority="low" loading="lazy" class="back" >
+    <div class="inner">
+  </div></div>
+  </div></div>
+<!--===========LAMP==========================-->
+<div fetchpriority="low" loading="lazy" class="element-item odd med" ontouchstart="this.classList.toggle('hover');" >
+  <div class="cbox" >
+    <div class="front" fetchpriority="low" loading="lazy" style="background-image:url(buttons/lamp.svg)">
+      <div class="inner" >
+    <h3 class="name">Lamponidae</h3>
+    <p class="symbol">lampona cylindrata marina white tail tailed sac</p>
+    <p class="number">20</p>
+    <p class="weight">40.078</p>
+  </div></div>
+  <div class="back" >
+    <div class="inner">
+  </div></div>
+  </div></div>
+<!--============LINY=========================-->
+<div fetchpriority="low" loading="lazy" class="element-item odd sm med" ontouchstart="this.classList.toggle('hover');" >
+  <div class="cbox" >
+    <div class="front" fetchpriority="low" loading="lazy" style="background-image:url(buttons/liny.svg)">
+      <div class="inner" >
+    <h3 class="name">Linyphiidae</h3>
+    <p class="symbol">Ca</p>
+    <p class="number">20</p>
+    <p class="weight">40.078</p>
+  </div></div>
+  <div fetchpriority="low" loading="lazy" class="back" >
+    <div class="inner">
+  </div></div>
+  </div></div>
+<!--=============LYCOS========================-->
+<div fetchpriority="low" loading="lazy" class="element-item odd sm med" ontouchstart="this.classList.toggle('hover');" >
+  <div class="cbox" >
+    <div class="front" fetchpriority="low" loading="lazy" style="background-image:url(buttons/lyc.svg); background-color:rgb(151, 151, 151);">
+      <div class="inner" >
+    <h3 class="name">Lycosidae</h3>
+    <p class="symbol">wolf artoria victoriensis tasmanicus</p>
+    <p class="number">20</p>
+    <p class="weight">40.078</p>
+  </div></div>
+  <div fetchpriority="low" loading="lazy" class="back" >
+    <div class="inner">
+  </div></div>
+  </div></div>
+<!--==============MALKAR=======================-->
+<div fetchpriority="low" loading="lazy" class="element-item sm even" ontouchstart="this.classList.toggle('hover');" >
+  <div class="cbox" >
+    <div class="front" fetchpriority="low" loading="lazy" style="background-image:url(buttons/malk.svg)">
+      <div class="inner" >
+    <h3 class="name">Malkaridae</h3>
+    <p class="symbol">Ca</p>
+    <p class="number">20</p>
+    <p class="weight">40.078</p>
+  </div></div>
+  <div fetchpriority="low" loading="lazy" class="back" >
+    <div class="inner">
+  </div></div>
+  </div></div>
+<!--===============MIMET======================-->
+<div fetchpriority="low" loading="lazy" class="element-item sm med" ontouchstart="this.classList.toggle('hover');" >
+  <div class="cbox" >
+    <div class="front" fetchpriority="low" loading="lazy" style="background-image:url(buttons/mim.svg)">
+      <div class="inner" >
+    <h3 class="name">Mimetidae</h3>
+    <p class="symbol">Australomimetus</p>
+    <p class="number">pirate</p>
+    <p class="weight">40.078</p>
+  </div></div>
+  <div class="back" >
+    <div class="inner">
+  </div></div>
+  </div></div>
+<!--================MITUR=====================-->
+<div fetchpriority="low" loading="lazy" class="element-item odd med" ontouchstart="this.classList.toggle('hover');" >
+  <div class="cbox" >
+    <div class="front" fetchpriority="low" loading="lazy" style="background-image:url(buttons/mitur.svg)">
+      <div class="inner" >
+    <h3 class="name">Miturgidae</h3>
+    <p class="symbol">wandering ghost</p>
+    <p class="number">20</p>
+    <p class="weight">40.078</p>
+  </div></div>
+  <div class="back" >
+    <div class="inner">
+  </div></div>
+  </div></div>
+<!--================MYSMEN========================-->
+<div fetchpriority="low" loading="lazy" class="element-item even sm" ontouchstart="this.classList.toggle('hover');" >
+  <div class="cbox" >
+    <div class="front" fetchpriority="low" loading="lazy" style="background-image:url(buttons/mys.svg)">
+      <div class="inner" >
+    <h3 class="name">Mysmenidae</h3>
+    <p class="symbol">Ca</p>
+    <p class="number">20</p>
+    <p class="weight">40.078</p>
+  </div></div>
+  <div class="back" >
+    <div class="inner">
+  </div></div>
+  </div></div>
+<!--================NICO========================-->
+<div fetchpriority="low" loading="lazy" class="element-item even med" ontouchstart="this.classList.toggle('hover');" >
+  <div class="cbox" >
+    <div class="front" fetchpriority="low" loading="lazy" style="background-image:url(buttons/nic.svg)">
+      <div class="inner" >
+    <h3 class="name">Nicodamidae</h3>
+    <p class="symbol">Ca</p>
+    <p class="number">20</p>
+    <p class="weight">40.078</p>
+  </div></div>
+  <div class="back" >
+    <div class="inner">
+  </div></div>
+  </div></div>
+<!--================OEC========================-->
+
+<div fetchpriority="low" loading="lazy" class="element-item odd sm" ontouchstart="this.classList.toggle('hover');" >
+  <div class="cbox" >
+    <div class="front" fetchpriority="low" loading="lazy" style="background-image:url(buttons/oec.svg); background-color:rgb(202, 204, 175);">
+      <div class="inner" >
+    <h3 class="name">Oecobiidae</h3>
+    <p class="symbol">star wall</p>
+    <p class="number">20</p>
+    <p class="weight">40.078</p>
+  </div></div>
+  <div class="back" >
+    <div class="inner">
+  </div></div>
+  </div></div>
+<!--===============OON=========================-->
+
+<div fetchpriority="low" loading="lazy" class="element-item six sm" ontouchstart="this.classList.toggle('hover');" >
+  <div class="cbox" >
+    <div class="front" fetchpriority="low" loading="lazy" style="background-image:url(buttons/oon.svg)">
+      <div class="inner" >
+    <h3 class="name">Oonopidae</h3>
+    <p class="symbol">Ca</p>
+    <p class="number">20</p>
+    <p class="weight">40.078</p>
+  </div></div>
+  <div class="back" >
+    <div class="inner">
+  </div></div>
+  </div></div>
+<!--=================ORSO=======================-->
+<div fetchpriority="low" loading="lazy" loading="lazy" class="element-item six sm even" ontouchstart="this.classList.toggle('hover');">
+  <div class="cbox" >
+    <div class="front" fetchpriority="low" loading="lazy" style="background-image:url(buttons/ors.svg); background-color:rgb(151, 151, 151);">
+      <div class="inner" >
+    <h3 class="name">Orsolobidae</h3>
+    <p class="symbol">Ca</p>
+    <p class="number">20</p>
+    <p class="weight">40.078</p>
+  </div></div>
+  <div class="back" >
+    <div class="inner">
+  </div></div>
+  </div></div>
+
+    <!--================OXY========================-->
+
+<div fetchpriority="low" loading="lazy" class="element-item odd sm" ontouchstart="this.classList.toggle('hover');" >
+  <div class="cbox" >
+    <div class="front" fetchpriority="low" loading="lazy" style="background-image:url(buttons/oxy.svg); background-color:rgb(236, 237, 229);">
+      <div class="inner" >
+    <h3 class="name">Oxyopidae</h3>
+    <p class="symbol">Lynx spider</p>
+    <p class="number">oxyope</p>
+    <p class="weight"></p>
+  </div></div>
+  <div class="back" >
+    <button class="brodal-trigger pinpaper" data-target="brodal-oxy" style="z-index:99;margin-top:-20px">Show me more </button>
+    <div class="inner">
+  </div></div>
+  </div></div>
+  <!--================SALT========================-->
+
+<div fetchpriority="low" loading="lazy" class="element-item odd sm" ontouchstart="this.classList.toggle('hover');" >
+  <div class="cbox" >
+    <div class="front" fetchpriority="low" loading="lazy" style="background-image:url(buttons/salt.svg); background-color:rgb(237, 237, 237);">
+      <div class="inner" >
+    <h3 class="name">Salticidae</h3>
+    <p class="symbol">jumping opisthoncus maratus peacock pavonis</p>
+    <p class="number"></p>
+    <p class="weight"></p>
+  </div></div>
+  <div class="back" >
+    <div class="inner">
+  </div></div>
+  </div></div>
+<!--========================================-->
+</div>
+</div>
+
+<script>
+</script>
+<script>
+const mediaQueryList = window.matchMedia("(orientation: portrait)");
+  
+</script>
+<script src="script.js"></script>
+<!-- Loads <model-viewer> for browsers: -->
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+<script src='min.js'></script>
+<script src='iso.js'></script>
+<script  src="./iso-temp.js"></script>
+<script src='tween.js'></script>
+<script  src="./brodal.js"></script>
+
+</div>
+</body>
+</html>
