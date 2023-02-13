@@ -10,6 +10,7 @@
 <link rel="stylesheet" href="./brodal.css">
 <link rel="stylesheet" href="./tooltip.css">
 
+
 <style type="text/css">
 
 .clawdiv{
@@ -21,7 +22,7 @@
 
 crib-text::-webkit-scrollbar-thumb:hover {
 background-image: url('images/thumb.svg');
-z-index: 999;
+z-index: 99;
 height:0vh;
 background-repeat: no-repeat, no-repeat;
 margin-top:9vh;
@@ -42,7 +43,7 @@ cursor:pointer;
 
 crib-text::-webkit-scrollbar-thumb {
 background-image: url('images/thumb.svg');
-z-index: 999;
+z-index: 99;
 height:100%;
 background-repeat: no-repeat, no-repeat;
 margin-top:-2vh;
@@ -111,7 +112,7 @@ cursor:pointer;
   color:white
 }
 .modal-close{
-  height:110vh;width:120vw;position:absolute;z-index:9999999;background-color: transparent; 
+  height:110vh;width:120vw;position:absolute;z-index:105;background-color: transparent; 
 }
 .palp-text{
   color:white; font-size: 1.45vw;
@@ -151,7 +152,7 @@ background-color: white;
 
   @media only screen 
 and (min-device-width: 200px) 
-and (max-device-width: 400px) 
+and (max-device-width: 415px) 
  {
   .warn{display:block;
 			
@@ -164,8 +165,7 @@ and (max-device-width: 400px)
     width:10vw;
     margin-top:5vh;
     margin-left:10vw;
-    z-index:9999999999999999999999999999;
-    display:;
+    z-index:99;
   }
   .model-mum2{
     display:none;
@@ -227,7 +227,7 @@ and (max-device-width: 400px)
     width:300px;
     height:400px;
     position:absolute;
-    z-index:999999;
+    z-index:999;
     margin-top:0%;
    margin-left:10%;
    position: absolute;
@@ -236,7 +236,10 @@ and (max-device-width: 400px)
   white-space:nowrap;
   color:brown;
   }
-
+  .is-blurred {
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+}
 </style>
 </head>
 
@@ -256,7 +259,7 @@ border:none"></button></a>
   
 <body class="view-survey">
 <!--=======================  MODAL-BOOK=======================================================-->
-<div class="tnd-modal" id="modal-book" style="height:60vh;margin-top:8vh;width:100vw; margin-left:0vw;">      
+<div fetchpriority="low" class="tnd-modal" id="modal-book" style="height:60vh;margin-top:8vh;width:100vw; margin-left:0vw;">      
   <button class="modal-close" type="button" style="  height:7vh;width:5vw;position:absolute;z-index:999999900099;background-color: rgba(255, 255, 255, 0.407);margin-top:-4vh;margin-left:4vw;cursor:pointer">X</button>
   <div class="clawdiv">
     <div class="col">
@@ -268,10 +271,11 @@ border:none"></button></a>
   <div class="tnd-modal-footer justify-content-between d-flex">
   </div></div></div>
   </div></div></div>
-  
   <!--=======================  CLAW BRODAL =======================================================-->
-<div class="brodal-page brodal" id="brodal-claw" style="height:70vh;">
- 
+<div fetchpriority="low" class="brodal-page brodal" id="brodal-claw" style="height:70vh;">
+
+ <div class="brodal-close" style="position:absolute; margin-left:-35vw;padding-right:110vw;z-index:115!important;margin-top:30vh !important; height:60vh;background-color: transparent;"></div>
+
 <div class="brodal-container" style="background-image: url(images/b-card.JPG);background-size: 100% 100%; width:90vw;">
 
 
@@ -283,15 +287,14 @@ border:none"></button></a>
     <div class="bro-baby" style="background-image: url(images/foot2.jpg);background-size:100% 100%;height:30vh; width:20vw;"></div>
 <iframe class="extras" src="claw/index.html" style="width:50vw; height:50vh;border:none;filter:none; box-shadow: none;margin-left:55vw;"></iframe>
 
-</div> <div class="brodal-close" style="position:absolute; margin-left:-35vw;padding-right:120vw;z-index:9999999999999999 !important;margin-top:40vh; height:60vh;background-color: transparent;"></div>
+</div> 
 </div>
 </div>
-
 <!--=======================  CRIBELLUM BRODAL =======================================================-->
 
-<div class="brodal-page brodal" id="brodal-crib" style="margin-top:60vh; margin-left:1vw;">
- 
-  <div class="brodal-container" style="background-image: url(images/b-card.JPG);background-size: 100% 100%; width:90vw;">
+<div fetchpriority="low" class="brodal-page brodal" id="brodal-crib" style="margin-top:35vh; margin-left:1vw;">
+  <div class="brodal-close" style="position:absolute; margin-left:-35vw;padding-right:140vw;z-index:89!important;margin-top:-60vh; height:160vh;background-color:transparent"></div>
+  <div class="brodal-container" style="background-image: url(images/b-card.JPG);background-size: 100% 100%; width:90vw;z-index: 105;">
 
 
     <div class="hideme"></div>
@@ -304,7 +307,8 @@ border:none"></button></a>
     Not all spiders have a cribellum, not even all Amaurobiids have one.
     <br>
     <br> 
-   V. T. Davies' papers seems to suggest all tasmanian genera are ecribellate (without cribellum).  <!--Wiki says 'Australian amaurobiids may be distinguished from the Amphinectidae by the absence of a pretarsal fracture and the presence of a  <a class="tool4" style="color:yellow"><img class="pic" src="rch.JPG">retrocoxal hymen</a> on coxa I (tiny white arm-pit circle sometimes visible).-->
+   V. T. Davies' papers seems to suggest all tasmanian genera are ecribellate (without cribellum). <br><br>
+   Image by Jeremy Poole
 
     </div>
       
@@ -313,42 +317,49 @@ border:none"></button></a>
 
      
 
-  <div class="brodal-close" style="position:absolute; margin-left:-35vw;padding-right:120vw;z-index:99!important;margin-top:-60vh; height:60vh;background-color: transparent"></div>
+ 
   </div>
   </div>
-  
-  
-
-
-  
   <!--=======================  JAWS BRODAL =======================================================-->
-<div class="tnd-modal" id="modal-jaw" style="height:80%;margin-top:-25vh;width:170vw; margin-left:-35vw;">      
 
-  <div class="jawdiv" style="margin-top:58vh; z-index: 99999;"><div class="col">
-       <button class="modal-close" type="button" style="margin-left:0vw !important;margin-top:-85vh;position:absolute;z-index:988888899;height:95vh;border:none;"></button>
-    <div class="tnd-modal-container"> <div class="tnd-modal-header">
+  <div fetchpriority="low" class="brodal-page brodal" id="brodal-jaw" >
+        <div class="brodal-close" style="position:absolute; margin-left:-20vw !important; padding-right:48vw; z-index:10 !important; margin-top:-35vh; height:100vh; background-color: transparent; width:50vw !important; filter: blur(12px);
+        -webkit-filter: blur(12px);"></div>
+    <div class="brodal-container" style="background-image: url(images/b-card.JPG);background-size: 100% 100%; width:50vw !important;height:70vh;position:absolute; z-index:99 !important; margin-left:3vw;overflow:visible">
   
-     <img class="jaw-pic" src="images/chel.svg" style="margin-top:-50vh;position:absolute; width:33vw;">
+      <div class="hideme"> <div class="bro-babytwo" style=" background-image: url(jaw/hick-oztira-aff.JPG); background-color: transparent;background-size:100% 100%;position:absolute;  "></div></div>
 
-  <div class="jaw-text" style="margin-top:5vh;">
-    
-The following links may provide some information on Tasmanian Amaurobiid jaw (chelicera) characteristics.
-<ul>
-<li><a href="https://wsc.nmbe.ch/reference/9290" target="_new" style="display: inline;">   
- WSC-V.T.Davies</a><br> Here Ms Davies states that Tasmarubrius's Chelicera are: <br>'<span class="tool" tooltip="sharply bent">geniculate</span> chelicerae with two <span class="tool" tooltip="towards the back">retromarginal</span> teeth ..and two <span class="tool" tooltip="towards the front">promarginal</span> teeth;.. <span class="tool" tooltip="hard skin">cuticle</span> ridged and without feathery hairs.'</li>
-  
- <br> 
- <li><a href="https://media.australian.museum/media/Uploads/Journals/21865/1579_complete.pdf" target="_new" style="display: inline;">G.A. Milledge-Storenosoma Oztira</a></li>
- <br> 
 
- <li><a href="http://ia802901.us.archive.org/1/items/MemoirsQueensla45QueeA/MemoirsQueensla45QueeA.pdf"_new" style="display: inline;">Queenland Museum paper</a></li>
-  </div> 
-  <div class="tnd-modal-footer justify-content-between d-flex">
-  </div></div></div>
-  </div></div></div>
+                <ul class="jaw-words" >
+A lengthy search has revealed little on the jaw particulars of Tassy Amaurobiids. Davies papers supply only anecdotal descriptions of chelicera.  Vernon Victor Hickman's 1981 paper, however provides a line drawing of Oztira affinus (image on left).  From this an approximate recreation could be made  in 3d model form.
+<br><br>
+A few paragraphs from Hichman's work:'Chelicerae  <span class="tool2" tooltip="geniculate='sharply-bent' ( pos. meant inflectere='slightly-bent')">slightly geniculate,</span> with lateral <span class="tool2" tooltip="knobs">condyles.</span> Clothed in front with a few
+long <span class="tool2" tooltip="hairs">setae.</span><br><br><span class="tool2" tooltip="back-of-jaws area between sets of teeth">Furrow </span> is <span class="tool2" tooltip="slanting">oblique,</span> promargin with six teeth, the distal four shorter than the
+others, retromargin with two teeth. Promarginal <span class="tool2" tooltip="typo for scopula='hair-tuft'">scapula </span>of ten barbed setae (not included in picture or model). Fang well
+curved.' <br><br>
+      <li>
+        <a href="#shmodal2" class="open-shmodal">Hickman-Oztira</a>
+        </li>
+
+
+     </ul> 
+       </div>
+        <!--TITLE-->
+     <img fetchpriority="low" class="palp-pic" src="images/chel-title.svg" style="height:20vh;margin-top:78vh;width:35vw; margin-left:10vw;position:absolute;z-index:99 !important;border-radius: 20%;pointer-events: none;">
+
+      <div class="palp-text" style=" width:90vw;position:fixed;margin-top:-5vh; box-sizing: content-box; display: inline-flex;">      
      
+  
+        </div>    
+        
 
 
+  <iframe fetchpriority="low" scrolling="no" class="extras" src="jaw/jaw.html" style="width:30vw; height:65vh;border:none;filter:none; box-shadow: none;margin-left:70vw;margin-top:25vh;position:absolute;z-index:99 !important;border-radius: 50%;"></iframe>
+  <div class="blackout" style="position:absolute; z-index:5 !important; background-color: rgba(0, 0, 0, 0.446);  filter: blur(12px);
+ -webkit-filter: blur(12px);width:130vw;height:100vh"></div>
+   
+    </div>
+     
     <!--=======================  PALP BRODAL =======================================================-->
     
   <div class="brodal-page brodal" id="brodal-palp">
@@ -358,13 +369,13 @@ The following links may provide some information on Tasmanian Amaurobiid jaw (ch
 
       <div class="hideme"></div>
         <!--TITLE-->
-     <img class="palp-pic" src="images/palps.png" style="margin-top:20vh;position:absolute; width:28vw;margin-left:68vw;z-index:55;">
+     <img class="palp-pic" src="images/palps.png" style="margin-top:20vh;position:absolute; width:28vw;margin-left:68vw;z-index:15;">
 
       <div class="palp-text" style=" width:90vw;position:fixed;margin-top:-5vh; box-sizing: content-box; display: inline-flex;">      
         
          <div class="bro-baby" style="width:55vw !important; background-image: url(images/tp.png); background-color: transparent;background-size:100% 100%;height:35vh; position:absolute;margin-left:-2.5vw; margin-top:2vh;"></div>
   
-        <ul style="margin-left:50vw; padding-right:5vw; padding-top:5vh;">
+        <ul style="margin-left:51vw; padding-right:5vw; padding-top:5vh;">
          The palp pictured is of <a href="https://biostor.org/reference/236983" target="_new">Teeatta driesseni. </a>
      V.T.Davies describes this and others in the links below:<br><br>
       <li>
@@ -381,8 +392,7 @@ The following links may provide some information on Tasmanian Amaurobiid jaw (ch
     <div class="brodal-close" style="position:absolute; margin-left:-35vw;padding-right:120vw;z-index:99!important;margin-top:40vh; height:60vh;background-color: transparent;"></div>
     </div>
     </div>
-    
-
+  
   <!--=======================  CALAMISTRUM MOD =======================================================-->
 
 
@@ -393,23 +403,15 @@ The following links may provide some information on Tasmanian Amaurobiid jaw (ch
 
       <div class="hideme"></div>
         <!--TITLE-->
-     <img class="palp-pic" src="images/cal.png" style="height:15vh;margin-top:60vh;width:30vw; margin-left:10vw;position:absolute;">
+     <img class="palp-pic" src="images/cal.png" style="height:15vh;margin-top:60vh;width:40vw; margin-left:10vw;position:absolute;">
 
       <div class="palp-text" style=" width:90vw;position:fixed;margin-top:-5vh; box-sizing: content-box; display: inline-flex;">      
         
          <div class="bro-baby" style="width:55vw !important; background-image: url(images/am-cal.svg); background-color: transparent;background-size:100% 100%;height:35vh; position:absolute;margin-left:-10.5vw; margin-top:1vh;"></div>
   
-        <ul style="margin-left:28vw; padding-right:5vw; padding-top:6vh;">
-Every Swiss-army-spider holsters a back leg mo-hawk for silk manufacture on the fly<br>
+        <ul style="margin-left:28vw; padding-right:5vw; padding-top:9vh;">
+Every Swiss-army-spider holsters a back leg mo-hawk for silk manufacture on the fly.<br>
 Sadly evolutionary cutbacks omitted this feature in the Tasmanian Amaurobiids.  They do, however, have modified stiff hairs for preening.<br><br>
-      <li>
-        <a href="#shmodal" class="open-shmodal">shmodal 1</a>
-        </li>
-      <br> 
-      <br> 
-      <li>
-        <button id="trigger-overlay2" type="button">Teeata</button></li>
-      <br>  <br> 
 
      </ul>   
         </div> 
@@ -418,11 +420,10 @@ Sadly evolutionary cutbacks omitted this feature in the Tasmanian Amaurobiids.  
     </div>
     </div>
     
-
 <!--=======================  3D MODEL =======================================================-->
 <div id="mydivon" style="display:block"><p style="margin-top:3vh;position:absolute; margin-left:2vw;box-shadow: -2px 3px 4px rgba(0, 0, 0, 0.737);border-top: 2px solid rgb(189, 189, 189);border-right: 2px solid rgb(122, 122, 122);border-left:2px solid black;padding:2px;text-shadow: -1px 1px 1px grey;color:rgb(31, 30, 30);">hide labels</p>
 <span class="model-mum">
-<model-viewer id="hotspot-camera-view-demo" src="am7.glb" alt="Amaurobiidae"
+<model-viewer class="model-viewer" id="hotspot-camera-view-demo" src="am7.glb" alt="Amaurobiidae"
 camera-controls touch-action="none"   
 camera-target="4.13m 26.92m -78.17m" camera-orbit="50.08deg 83.93deg 354.1m" field-of-view="30deg"
 shadow-intensity="2"
@@ -445,10 +446,10 @@ style="background-color: transparent;">
 data-orbit="1.421e-14deg 79.48deg 403.7m"	
 data-target="1.1879433m 5m  -76.96m" >
 EYES
-<g style="color:white;margin-left:-10% !important;font-family: 'Roboto Mono', monospace; margin-top:calc(22vh * 30px)">
+<g style="color:rgb(209, 209, 209);margin-left:-10% !important;font-family: 'Roboto Mono', monospace; margin-top:calc(22vh * 30px)">
     Always the polite way to start introductions; looking into our new friend's eyes will often provide clues as to which family they may  belong.
       <br>
-      <br> Two rows of small, evenly-sized, eyes make Amaurobiidae. Their eyes are right up front on handsomely open faces.  Their heads (*cephalothorax) are both rounded and squared in the impossible fashion attained by wombats.
+      <br> Two rows of small, evenly-sized, eyes make Amaurobiidae. Their eyes are right up front on handsomely open faces.  Their heads (*cephalothorax) are both rounded and squared in the impossible fashion attained by wombats.<br><br> Image courtesy of Jeremy Poole.
       
 </g>
 <g><img class="imgpop"src="images/eyes-big.svg"><g></div>
@@ -491,9 +492,9 @@ data-target="4.49m 13.18m -74.96m">
 
    <!--==============================================================================-->           
 <!--JAWS  BUTTON-->	
-  <button class="Hotspot-jaw view-button modal-trigger"  data-target="modal-jaw"  slot="hotspot-6" data-position="9.599942588254292m 7.486451919434488m -63.3082963910907m" data-normal="0.42101492589533196m -0.3977041048472985m 0.8152164603103629m" data-visibility-attribute="visible"
+  <button class="Hotspot-jaw view-button brodal-trigger"  data-target="brodal-jaw"  slot="hotspot-6" data-position="9.599942588254292m 7.486451919434488m -63.3082963910907m" data-normal="0.42101492589533196m -0.3977041048472985m 0.8152164603103629m" data-visibility-attribute="visible"
   data-orbit="11.6deg 93.21deg 295.2m"  field-of-view="17.6deg" 
-  data-target="4.49m 13.18m -74.96m">
+  data-target="4.49m 13.18m -74.96m" >
 
   <div class="HotspotAnnotation view-button"  
   data-orbit="11.6deg 93.21deg 295.2m"  field-of-view="17.6deg" 
@@ -547,8 +548,8 @@ data-target="4.49m 13.18m -74.96m">
   <a style="font-family:'XTypewriter'; font-size:2vw;line-height:1vh;margin-left:20vw;color:black; text-shadow: none;">(Morphology)</a></p></span>
 </span>  
 <div class="warn"><br><br><br><br><br><br><br><br><br><br><br><br><img src="images/ls.svg" style="width:180vw;margin-left:-40vw;"></div>
-<div class="rex"></div>
-  <div class="rex2"></div>
+<!--<div class="rex"></div>
+  <div class="rex2"></div>-->
   
   
 
@@ -580,48 +581,40 @@ data-target="4.49m 13.18m -74.96m">
       <iframe  src="b2.pdf#view=FitH/FitW" style="position:absolute; height:90vh; width: 90vw;">  </iframe>
     </div>
 
-        <!--MODAL TEEATTA-->
+<!--MODAL TEEATTA-->
         <div class="overlay2 overlay-scale2" style="position:absolute; z-index:99999999999; padding:5vw;margin-top:-3vh;">
           <button type="button" class="overlay-close2">Close</button>
-          <iframe  src="Teeatta.pdf#view=FitH/FitW" style="position:absolute; height:90vh; width: 90vw;">  </iframe>
+          <iframe  src="Teeatta.pdf#view=FitH/FitW" style="position:absolute; height:90vh; width: 90vw;" fetchpriority="low">  </iframe>
         </div>
 
-
-
-
-        <!--MODAL NECROBOTS-->
+<!--MODAL NECROBOTS-->
         <div class="overlay3 overlay-scale3" style="position:absolute; z-index:99999999999; padding:5vw;margin-top:-3vh;">
           <button type="button" class="overlay-close3">Close</button>
-          <iframe  src="necrobots.pdf#view=FitH/FitW" style="position:absolute; height:90vh; width: 90vw;">  </iframe>
+          <iframe  src="necrobots.pdf#view=FitH/FitW" style="position:absolute; height:90vh; width: 90vw;" fetchpriority="low">  </iframe>
         </div>
 
-
-
-
-
-        <div id="shmodal" class="shmodal-wrap closed" style="z-index:999999999999999999999999; position:absolute;">
+<div id="shmodal" class="shmodal-wrap closed" style="z-index:999999999999999999999999; position:absolute;">
           <div class="shmodal">
             <a href="#" class="shmodal-close">&times;</a>
          
-            <iframe  src="Tasmarubrius.pdf#view=FitH/FitW" style="position:absolute; height:90vh; width: 90vw;margin-left:4vw;margin-top:2vh;">  </iframe>
+            <iframe  src="Tasmarubrius.pdf#view=FitH/FitW" style="position:absolute; height:90vh; width: 90vw;margin-left:4vw;margin-top:2vh;" fetchpriority="low" SameSite>  </iframe>
           </div>
         </div>
         
 
-        <div id="shmodal2" class="shmodal-wrap closed">
+<div id="shmodal2" class="shmodal-wrap closed" style="z-index:999999999999999999999999; position:absolute;">
           <div class="shmodal">
             <a href="#" class="shmodal-close">&times;</a>
-            <h1>shmodal 2 is open</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-              dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div style="background-color: beige; box-shadow: -2px 2px 2px black; width:20vw; height:15vh;position:absolute; z-index:9999999999999999999999999;margin-top:15vh;padding:3px; margin-left:3vw; font-size: 2vw;"> Oztira appears on page 16.  It was described as 'Otira' by Hickman at the time.</div>
+            <iframe  src="ozt.pdf#view=FitH/FitW" style="position:absolute; height:90vh; width: 90vw;margin-left:4vw;margin-top:2vh;" SameSite="Lax" fetchpriority="low" crossorigin>  </iframe>
           </div>
         </div>
         
-        <div id="shmodal3" class="shmodal-wrap closed">
+<div id="shmodal3" class="shmodal-wrap closed">
           <div class="shmodal">
             <button2><a href="#" class="shmodal-close">&times;</a></button2>
             <h1>shmodal 3 is open</h1>
-            <iframe width="100%" height="360" src="https://www.youtube.com/embed/P9qCKAbV7DY?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+            <iframe fetchpriority="low" width="100%" height="360" src="" frameborder="0" allowfullscreen crossorigin></iframe>
           </div>
         </div>
 
@@ -661,20 +654,21 @@ data-target="4.49m 13.18m -74.96m">
   <script src='js/buttstrap.js'></script>
   <script type="module" src="js/viewer.js"></script>
  <script  src="./brodal.js"></script>
-  <script src='js/tween.js'></script>
+  <script src='js/tween.js' crossorigin></script>
   <script  src="js/mods.js"></script>
   <script  src="./tooltip.js"></script>
  <link rel="preconnect" href="https://fonts.googleapis.com">
  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
- <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Ephesis&family=Petit+Formal+Script&family=Shadows+Into+Light&family=Tangerine:wght@700&display=swap" rel="stylesheet">
- <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Raleway:wght@100;300&family=Roboto+Mono:wght@100&family=Shadows+Into+Light&display=swap" rel="stylesheet">
- <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Ephesis&family=Petit+Formal+Script&family=Shadows+Into+Light&family=Tangerine:wght@700&display=swap" rel="stylesheet"crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Raleway:wght@100;300&family=Roboto+Mono:wght@100&family=Shadows+Into+Light&display=swap" rel="stylesheet"crossorigin>
+ <link rel="preconnect" href="https://fonts.googleapis.com"crossorigin>
  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
- <link href="https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap" rel="stylesheet"crossorigin>
 
 </body>
 
 </html>
+
 <script>
   $(document).ready(function(){
     $('[data-toggle="tooltip"]').tooltip();   

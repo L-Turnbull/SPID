@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en" >
 <head>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com"crossorigin>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Ephesis&family=Petit+Formal+Script&family=Shadows+Into+Light&family=Tangerine:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Ephesis&family=Petit+Formal+Script&family=Shadows+Into+Light&family=Tangerine:wght@700&display=swap" rel="stylesheet"crossorigin>
   <meta charset="UTF-8">
-  <title>CodePen - Responsive sidebar revealed on click and key press</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  <title>Amaurobiidae</title>
+ 
 <link rel="stylesheet" href="./sidebar.css">
 <style>
 
@@ -49,7 +49,7 @@
 
 
     <li class="sidebar-item">
-      <a href="#" class="sidebar-anchor">
+      <a nav-clear menu-close href="#" class="sidebar-anchor">
         <p2 class="" onclick="myFunction2()">
           <button2>Morphology
 
@@ -57,13 +57,13 @@
 
 
     <li class="sidebar-item">
-      <a href="#" class="sidebar-anchor">
-        <p2  onclick="myFunction()"><p2><br>Genera</p2></a></li>
+      <a nav-clear menu-close href="#" class="sidebar-anchor">
+        <p2  class=p2" onclick="myFunction()"><p2><br>Taxonomy <br> & Genera<br></p2></a></li>
 
 
-    <li class="sidebar-item"><a href="#" class="sidebar-anchor"><p onclick="myFunction4()">Taxonomy</p></a></li>
-   <li class="sidebar-item"><a href="#" class="sidebar-anchor"onclick="myFunction()">Etymology</a></li>
-    <li class="sidebar-item"><a href="#" class="sidebar-anchor"><i style="display:inline; font-size:0.5em;white-space:nowrap;font-family: 'Moon Dance', cursive;text-align: center;"><br>Let's go to the<br><c style="font-size:2.5em; font-family: 'Arimo', sans-serif">pictures</c></i></a></li>
+
+   <li class="sidebar-item p2"><a href="#" class="sidebar-anchor p2"onclick="myFunction3()"><br><p2  class=p2" onclick="myFunction3()"><p2><br>Etymology<br></p2></a></li>
+    <li class="sidebar-item p2"><a href="#" class="sidebar-anchor p2"><i style="display:inline; font-size:0.5em;white-space:nowrap;font-family: 'Moon Dance', cursive;text-align: center;"><br>Let's go to the<br><c style="font-size:2.5em; font-family: 'Arimo', sans-serif">pictures</c></i></a></li>
   </ul>
 </div>
 <script>
@@ -72,11 +72,14 @@
 </script>
 <script>
   function myFunction() {
-    document.getElementById("myframe").src = "images/fadepalp.html";
+    document.getElementById("myframe").src = "genera.html";
     
   }
   function myFunction2() {
     document.getElementById("myframe").src = "AM-NEW.html";
+  }
+  function myFunction3() {
+    document.getElementById("myframe").src = "ety-am/teeatta2.html";
   }
   </script>
   </script>

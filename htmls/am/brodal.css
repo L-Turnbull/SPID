@@ -23,14 +23,12 @@
   width: 100%;
   top: 0;
   left: 0;
-
   padding: 20px;
-  z-index: 10;
   display: none;
   transition:all 1s ease;
   transform-style: preserve-3d;
   perspective: 900px;
-  z-index:9999999999999999;
+  z-index:99;
 
 }
 .brodal .brodal-container.small{
@@ -88,27 +86,16 @@ transform: translateX(-10%) translateY(-50%);
   transition: all 0.5s ease;
   transform: scale(0) translateX(-400px) translateY(-200px);
   color:white;
-  z-index:9999999999999999;
+  z-index:105;
 
   
 }
 .brodal .brodal-close {
   position: absolute;
-  top: -10px;
-  right: -20px;
-  border-radius: 7px;
-  width: 126px;
-  height: 126px;
-  background-color: white;
 opacity:1;
-  text-align: center;
   cursor: pointer;
-  transform: scale(1) translateX(-30px) translateY(20px);
-  color:black;
-  z-index:12;
-  filter:drop-shadow(-2px 2px 2px);
-  z-index:999999999999999999999;
-
+  transform: scale(1);
+  z-index:105;
 }
 
 .small{
@@ -134,7 +121,7 @@ background-color: white;
   width:15%;
   text-align: center;
   font-size: 2em;
-  animation: animatebabytwo 2s ease;
+  animation: animatebabytwo 1s ease;
   animation-delay:0;
   animation-fill-mode: both;
   opacity:1;
@@ -150,9 +137,35 @@ animation: animatebaby 1s ease;
 animation-delay: 1000ms;
   transition:all 1s ease;
   z-index: 13;
-  
 }
 .brodal .bro-baby {
+ 
+  background-color: grey;
+opacity:1;
+  transform: translateX(5px) scale(1);
+  font-weight: 900;
+  color: #000000;
+  opacity:1;
+  height:300px;
+  width:200px;
+  animation: animatebaby 1s ease;
+  animation-delay: 1000ms;
+  z-index: 9913;
+
+
+}
+
+.bro-babytwo{
+ 
+opacity:0;
+animation: animatebabytwo 1s ease;
+
+  transition:all 1s ease both;
+  z-index: 13;
+
+  
+}
+.brodal .bro-babytwo {
   filter:drop-shadow(-3px 3px 3px);
 
 opacity:1;
@@ -162,20 +175,26 @@ opacity:1;
   opacity:1;
   height:20vh;
   width:30vw;
-  animation: animatebaby 1s ease;
-  animation-delay: 1000ms;
-  z-index: 13;
+  animation: animatebabytwo 1s ease both;
+  margin-left:0.5vw; margin-top:2vh; filter:drop-shadow(-2px 2px 2px black);
+  z-index: 119;
+  height:15vw !important; width:15vw;
 
 }
 @keyframes animatebaby {
     
   0% {
-    transform:translateX(-800px) rotate(-540deg);
+    transform: translateX(-800px) rotate(-540deg);
     opacity:0;
+
+
   }
+
   100% {
-    transform:translateX(0) rotate(0deg);
+    transform: translateX(0) rotate(0deg);
     opacity:1;
+   
+  
   }
 }
 @keyframes animatebabytwo {
@@ -199,6 +218,7 @@ opacity:1;
   100% {
     transform:translateX(180vw) rotate(0deg);
     opacity:1;
+    
   }
 }
 

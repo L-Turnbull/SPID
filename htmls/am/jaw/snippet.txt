@@ -1,0 +1,1 @@
+<model-viewer src="chel4.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1.41" exposure="0.86"> </model-viewer>

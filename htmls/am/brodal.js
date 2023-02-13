@@ -68,13 +68,15 @@ var brodalTarget = $(".brodal");
             "brodalClosepageTime+=0.51"
           )
           .fromTo(
-            (brodalTarget + ' .brodal-container .brodal-header, brodal-close, .bro-baby, .hideme, .palp-text, .palp-pic, .framegame, .extras' + brodalTarget + ' .brodal-container .brodal-body, .brodal-close, .bro-baby, .hideme, .palp-text, .palp-pic, .framegame, .extras' + brodalTarget + ' .brodal-container .brodal-footer .brodal-close, .bro-baby, .hideme, .palp-text, .palp-pic, .framegame, .extras '),
+            (brodalTarget + ' .brodal-container .brodal-header, brodal-close, .bro-baby, .bro-babytwo, .hideme, .palp-text, .palp-pic, .framegame, .extras, .jaw-words' + brodalTarget + ' .brodal-container .brodal-body, .brodal-close, .bro-baby, .bro-babytwo, .hideme, .palp-text, .palp-pic, .framegame, .extras, .jaw-words' + brodalTarget + ' .brodal-container .brodal-footer .brodal-close, .bro-baby, .bro-babytwo, .hideme, .palp-text, .palp-pic, .framegame, .extras, .jaw-words '),
             0.46,
             
             { opacity: 0, transform: "translateX(-8px) rotateZ(-60deg) scale(0)",  },
            
             { opacity: 1,  transform: "translateX(-8px) rotateZ(0deg) scale(1)" },
             "brodalClosepageTime+=0.9"
+
+            
           );
 
           return brodalAnimationbro;
@@ -86,6 +88,7 @@ var brodalTarget = $(".brodal");
   $(".brodal-trigger").click(function() {
     brodalTarget = '#' + $(this).attr("data-target");
     bro = broOpenbrodal(brodalTarget);
+    
   });
   
   //CLOSE brodal
