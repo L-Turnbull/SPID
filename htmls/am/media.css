@@ -330,7 +330,7 @@ transition: opacity 0.1  1.5s ease;
 	box-shadow: -3px 2px 4px 3px rgba(0, 0, 0, 0.579);
 	height:calc(10vw - 1%);
 	width:10vw;
-	background-image: url(images/head.JPG);
+	background-image: url(images/head.jpg);
 	transform: scale(1.7) translateY(-4vh) translateX(3vw);
 	border-radius: 50%;
 	position:absolute;
