@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>notes on 'Amaurobiidae-V.T.Davies Compilation'</title>
+  <link rel="stylesheet" href="./style.css">
+  
+<style>
+@font-face {
+	font-family:'XTypewriter';
+	src: url('XTypewriterBold-jEBl0.ttf');
+  }
+div {
+  font-family: 'Josefin Sans', ;
+    border: 1px solid black;
+    font-size: 16px;
+    font-size: 3.vw; 
+    margin-top:1%;
+   margin-left:50%;
+   padding:2%;
+   transform: translateX(-50%) translateY(-0%);
+}
+
+.in-pic{
+  
+   margin-top:20%;
+   margin-left:50%;
+   transform: translateX(-50%) translateY(-50%);
+  }
+  .pic{
+display:none;
+width:0vw;
+height:0;
+position:fixed;
+margin-top:60%;
+margin-left:50%;
+transform: translateX(-50%) translateY(-50%);
+  }
+  .tool2{ white-space:nowrap !important;}
+  .tool:hover .pic{
+    transition: all 2s ease;
+    display:flex;
+    padding:2%;
+    width:100px;
+    height:200px;
+    position:absolute;
+    margin-top:20%;
+   margin-left:100%;
+   transform: translateX(80%) translateY(-80%);
+  filter:drop-shadow(-2px 2px 2px black)
+  }
+  .tool4{
+    color:rgb(226, 168, 117);
+  }
+  .tool4:hover .pic{
+    transition: all 2s ease;
+    display:flex;
+    padding:2%;
+    width:200px;
+    height:300px;
+    position:absolute;
+    z-index:999999;
+    margin-top:0%;
+   margin-left:10%;
+   position: absolute;
+   transform: translateX(-20%) translateY(-100%);
+  filter:drop-shadow(-2px 2px 2px black);
+  white-space:nowrap;
+  color:brown;
+  }
+  tw{
+    color:rgb(23, 1, 1);
+    background-color: antiquewhite;
+    box-shadow: -2px 2px 2px black;
+    padding:1%;
+  }
+  .accordion {
+	margin: auto;
+	width: 95%;
+}
+.accordion input {
+	display: none;
+}
+label{
+  font-size: 3vw;
+	box-shadow: 0 -1px 0 #e5e5e5,0 0 2px -2px rgba(0,0,0,.12),0 2px 4px -4px rgba(0,0,0,.24);
+}
+.box {
+	position: relative;
+	background: rgba(255, 255, 255, 0);
+    height: 64px;
+    transition: all .15s ease-in-out;
+    box-shadow: -2px 3px 10px #e5e5e5,0 0 2px -2px rgba(0,0,0,.12),0 2px 4px -4px rgba(0,0,0,.24);
+}
+.box::before {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    pointer-events: none;
+
+}
+header.box {
+	background: #a1a1a100;
+	z-index: 100;
+	cursor: initial;
+	box-shadow: 0 -1px 0 #e5e5e5,0 0 2px -2px rgba(0,0,0,.12),0 2px 4px -4px rgba(0,0,0,.24);
+}
+header .box-title {
+	margin: 0;
+	font-weight: normal;
+
+    font-size: 3vw; 
+	color: white;
+	cursor: initial;
+}
+.box-title {
+	width: calc(100% - 40px);
+	height: 64px;
+	line-height: 64px;
+	padding: 0 20px;
+	display: inline-block;
+	cursor: pointer;
+  box-shadow: none;
+  filter: none;
+	-webkit-touch-callout: none;-webkit-user-select: none;-khtml-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;
+}
+
+.box-content {
+	width: calc(100% - 40px);
+	padding: 30px 20px;
+	font-size: calc(3vw - 2%);
+	color: rgba(0,0,0,.54);
+  line-height: 6vw;
+	display: none;
+}
+.box-close {
+	position: absolute;
+	height: 64px;
+	width: 100%;
+	top: 0;
+	left: 0;
+	cursor: pointer;
+	display: none;
+}
+input:checked + .box {
+	height: auto;
+	margin: 16px 0;
+    box-shadow: 0 0 6px rgba(0,0,0,.16),0 6px 12px rgba(0,0,0,.32);
+}
+input:checked + .box .box-title {
+	border-bottom: 1px solid rgba(0,0,0,.18);
+}
+input:checked + .box .box-content,
+input:checked + .box .box-close {
+	display: inline-block;
+  font-size: 2vw;
+  line-height: 1.7em;
+}
+.arrows section .box-title {
+	padding-left: 44px;
+	width: calc(100% - 64px);
+}
+.arrows section .box-title:before {
+	position: absolute;
+	display: block;
+	content: '\203a';
+	font-size: 18pt;
+	left: 20px;
+	top: -2px;
+	transition: transform .15s ease-in-out;
+	color: rgba(0,0,0,.54);
+}
+input:checked + section.box .box-title:before {
+	transform: rotate(90deg);
+}
+h1,
+		h2,h3{
+			text-align: center;
+      line-height:0.5em;
+		}
+		.c{
+			text-align: center;
+      line-height:1em;
+		}
+</style>
+</head>
+<body style="backgound-color:white !important;">
+<div>
+<p id="copy">
+
+  <h1>Etymology (word origins)</h1>
+  <p class="c">For those of us that love language as much as spiders and are delighted when they get together.</p><be><br>
+  
+
+
+<br><br>
+<nav class="accordion arrows">
+
+  <input type="radio" name="accordion" id="cb1" />
+  <section class="box" >
+    <label class="box-title" for="cb1" style="	font-family:'XTypewriter';font-size:2.5vw; background-image:url(tag-long.png);background-color: rgba(250, 235, 215, 0);box-shadow: none;filter:none;">Amaurobiidae</label>
+    <label class="box-close" for="acc-close"></label>
+    <div class="box-content" style="border:none">
+      <h2>Amaurobiidae:</h2>
+<p class="c">'Life of darkness'</p>
+On the etymology of Amaurobiidae no one could describe it better than Stephen Ellis Lew <a href="https://escholarship.org/content/qt59s2d2tc/qt59s2d2tc_noSplash_5821bb9ef97008d8432886dcf48cfcf3.pdf" target="_new">(read his work)</a>. He says: <br><br>
+ 'The first amaurobiid to appear in the literature,
+Amaurobius fenestralis (Ström), was described by Ström (1768) as Aranea fenestralis. Being
+a very common Old World species, it is not surprising that it received a second name, Aranea
+atrox (DeGeer), ten years later (DeGeer 1778). At this time the few named spiders were all
+included in Aranea Linnaeus, although that name would turn out to be a junior synonym of
+Araneus Clerck (ICZN Opinion 2224, case 3371). Once enough spiders had been described,
+and enough differences within the Araneae observed, more genera were required. At this
+point Latreille (1806) placed A. fenestralis in Clubona as C. atrox. Amaurobius fenestralis
+was called by the junior synonym atrox until Menge (1871) restored the original specific
+epithet.<br><br>
+The name Amaurobius was introduced by C.L. Koch (1837). The name is derived from
+the Greek roots “amauros” (άμανρός), meaning dark or obscure, and “bios” (βιος), meaning
+life in the broader interpretation, or more specifically a manner or living or livelihood (Brown
+1954). Cameron (2005) argued sensibly that Koch intended to describe the cryptic habit of
+amaurobiids, which are generally found hidden in litter or under stones, bark, or wood.''
+<br><br><br>
+
+
+
+      </div>
+  </section>
+
+
+  <input type="radio" name="accordion" id="acc-close" />
+</nav>
+
+
+ <br>
+
+ <!--
+
+  THREE SPECIES
+ -->
+<nav class="accordion arrows">
+<input type="radio" name="accordion" id="cb5" />
+<section class="box">
+
+
+
+
+  <label class="box-title" for="cb5" style="	font-family:'XTypewriter';font-size:2.5vw;">Tasmabrochus</a></label>
+  <label class="box-close" for="acc-close"></label>
+
+  <div class="box-content"style="border:none">  
+    <p class="copy"style="margin-top:-30vh; word-wrap:wrap ;padding:none;display:inline; width:100%;">
+      <h2>Tasmabrochus:</h2>
+	
+      <p class="c">'The buck-toothed Tasmanian'</p>
+    <br>
+      Quite possibly the best spider name of all time. Whether intentional or not.<br><br> The originating literature says: 'of 'Tasma' from Tasmania and Latin 'brochus', a projection, referring to the very prominent tegular apophysis of the male palp. It is considered masculine in gender.'<br><br>
+    
+       'Brochus' does not mean projection.  It is, in fact, a latin insult, meaning 'buck-toothed' or at a stretch 'projecting teeth'.   
+    <br><br>
+      Plautus, a Roman playwright, has this phrase in one of his comedies: 'pariat postea aut varum aut valgum aut compernem aut paetum aut <g style="font-weight: 700;">brocchum filium.</g>'.  Translating to giving birth to...'a bent, knock-kneed and buck-toothed son.'<br><br>
+    
+      The 'Latin Dictionary and Grammar' notes:'brochus/brocha/brochum, AO Adjective. Translations; of persons having projecting/prominent teeth' <br><br>
+      Perhaps the words' creator has left a humorous legacy for anyone wishing to delve into the linguistics; as it forms a joined-declined noun to mean 'buck-toothed Tasmanian.'<br><br>
+      FYI-'Prominens' and 'eminens' are latin adjectives for projecting and 'minax' serves in meaning a menacing kind of projection. 
+    
+    
+      <br><br><br><br>
+  
+    
+    
+    
+
+</div>
+</nav>
+
+
+
+
+<br>
+<nav class="accordion arrows">
+  <input type="radio" name="accordion" id="cb3" />
+  <section class="box">
+
+
+
+    <label class="box-title" for="cb3" style="	font-family:'XTypewriter';font-size:2.5vw;">Tasmarubrius</a></label>
+    <label class="box-close" for="acc-close"></label>
+  
+    <div class="box-content"style="border:none">  
+      <p class="copy"style="margin-top:-30vh; word-wrap:wrap ;padding:none;display:inline; width:100%;">
+        <h2>Tasmarubrius:</h2>
+        <p class="c">"Red Tasmanian (miser)"</p>
+      
+     
+        In her paper Davies writes: <br>'Tasmarubrius
+        Etymology: A combination of “Tasma”, from
+      Tasmania, and Rubrius.'<br><br>
+      Assuming that 'rubrius' was selected from latin this is a fairly run of the mill vulgar latin hybrid.  "Ruber" tends to form words associated with red. <br><br> Wiki says: 'From Proto-Italic *ruðros, from Proto-Indo-European *h₁rudʰrós (“red”), from the root *h₁rewdʰ-.<br><br>
+      
+      Cognates include Old Armenian արուրդ/երուրդ (arurd/erurd) or արոյդ/երոյդ (aroyd/eroyd), Ancient Greek ἐρυθρός (eruthrós), Sanskrit रुधिर (rudhirá), Old East Slavic ръдръ (rŭdrŭ) (< Proto-Slavic *rъdrъ). Compare dialectal form rūfus (“reddish, ruddy”).'
+      <br><br>
+      There is another mention of 'rubrius;' Gaius Rubrius Urbanus.  A Roman whose epitaph describes him as 'a miser.' Whilst immensely unlikely that this is the  source for our spider's name this reference is a fun detour <a href="https://books.openedition.org/pupvd/7111?lang=en">(read here)</a>
+      <br><br><br><br>
+  
+  </div>
+  </nav>
+<br>
+
+  <nav class="accordion arrows">
+    <input type="radio" name="accordion" id="cb4" />
+    <section class="box">
+      <label class="box-title" for="cb4" style="	font-family:'XTypewriter';font-size:2.5vw;">Teeatta</a></label>
+      <label class="box-close" for="acc-close"></label>
+    
+      <div class="box-content"style="border:none">  
+        <p class="copy"style="margin-top:-30vh; word-wrap:wrap ;padding:none;display:inline; width:100%;">
+          <h2>Teeatta:</h2>
+          <p class="c">'little-shadow black-ant'</p>
+          The original document says:
+          <br> 'ETYMOLOGY. Tasmanian Aboriginal teeatta, forest.
+          Gender is masculine.'
+        <br><br>
+          No citation of source accompanies the paper. Technically, of course, 'Tasmanian Aboriginal' is not a language.  There existed, it is estimated, up to 12 separately named languages spoken by indigenous Tasmanian people.  There is an effort at present aimed at collecting the remnants of these languages.  These are being compiled under the loose banner of 'Palawa Kani'.  'Palawa' being the chosen name of Tasmanian aboriginal people <a href="http://palawa-places.org.au/glossary" target="_new">(see site)</a>
+          <br><br>
+        
+          Palawa recorded their histories verbally and pictorially.  Showing great intricacy and intelligence in their art and lore.
+          Unlike latin, The Palawa did not have a written alphabetical language.  This means that one cannot find 'TEEATTA' as an exact spelling and match it to known suffix and prefixes, declensions and conjugations.  
+          
+          <br><br>'TEE- AT- AH' is the crude guess of the listener at the time.  Linguists have paired this spelling with other similar ones of overlapping geographic range and verbal import: 'tiatta, tietta, dietta, di- ata.' To keep things simple we will just use the spelling 'teeatta.'
+        
+          <br><br>
+        
+          It is also important to input that all Palawa Kani dialects did not use gender inflection, perhaps declaring Teeatta 'masculine' was an old habit from latin hybrid binomials.<br><br>
+
+
+          According to Anthropologist Eric Vaszolyi (University lecturer in Linguistics), Tasmanian indigenous languages were and are not 'prefixed.'  'They did not, like some Northern Australian dialects, infer gender via pre- or suffixes.'
+        
+          <br><br>
+        
+          Tas Gov language archives, library collections of the 'Papers and Proceedings of the Royal Society of Van Diemen's Land show two or three entries for the morpheme 'Teeatta.'<br><br>
+        
+          
+          These accounts describe usage in a least six, closely associated, tribal dialects of the Southern Tasmanian tribes. The root appears to have begun as an adjective; meaning 'darkness.'
+          <br><br>
+          Rebe Taylor's (tasmanian) Aboriginal History, Vol. 32, supports this as it translates Teeata as 'shadow.' Combining forms and semantic drifts allowed it to evolve to represent shade, caves, night, soil, ground and more popularly to mean 'large black invertebrates' such as ants and spiders.<br><br>
+          
+          Where the name Teeatta was sourced by Davies is unclear. A google search using the words used by Davies: 'forest' and Tasmanian aboriginal' returns reference to one probable source: works of Joseph Milligan (a surgeon with the Van Diemen's Land Company) in 1857.<br><br>
+          
+          Using Milligan's notes the Royal Tasmanian society (so named because of the funds and charter the business men had received from the King to steal the island) printed a booklet. Therein appeared a table of general terms and the tribes they come from. On page 7 the words 'teeatta kannamarranah' appear, recorded from the Wayraparattee and Pallanyneene people.
+          <br><br>
+          The Table translates 'teeatta kannamarranah' as 'forest floor.' However, following more detailed linguistics this would translate to literally meaning 'shaded ground'
+          <br><br>
+          This makes further sense were one to read, not even the book, but the rest of the short table in the Royal Tasmanian society booklet. For example on the next page(8) 'Teeatta annawa' is translated to mean 'river Ford.<br><br>
+          
+          'To the modern day Australian or English person a 'Ford' may be a shallow crossing area of a river but to a Scotsman (the writer) a Fjord is a deeply shadowed canyon with a river. To an Indigenous Australian one might call it 'Dark Water.'<br><br>
+          
+          Oh, I hear you say, 'perhaps it could mean 'forest river!?' This notion is dispelled, again, within the Royal Tasmanian table where teeatta on its own is translated as = 'black ant'<br><br>
+          
+          I hear the stubbornly biased retort:'could be a forest ant!'<br><br>
+          
+          To put the matter to bed the last example is 'warrawina Teeata' that translates to 'ghost's shadow'<br><br>
+          
+          Whilst Australian aboriginals have varied dialects the limited geography of Tasmanian Aboriginals made for a less diverse range, especially those with shared borders, often 'marrying' and adopting shared linguistics.<br><br>
+          
+          So whilst Teeata alone does not mean 'forest' it may have formed part of a colloquialism that loosely referred to the shade provided by a forest and as a happy accident was also the word likely used to describe small black invertebrates, perhaps, one might imagine, being applied to the spider now bearing the name.
+          <br><br><br><br>
+          
+          
+          REFERENCES<br><br>
+          
+          Much thanks to those at Palawa Kani (reconstruction of Tasmanian dialect program run by Indigenous Australians),<br><br>
+          
+          The Tasmanian Aboriginal Center,<br><br>
+              University of Tasmania Library - 'Special and Rare Materials' Collection,<br><br>
+          Tas Gov language archives,<br><br>
+          
+          and the State library: 'collections of the 'Papers and Proceedings of the Royal Society of Van Diemen's Land'.<br><br>
+          
+          further references:<br><br>
+          
+          Harvard's indigenous language compilation<br><br>
+          
+          Norman Plomley (Associate in Aboriginal and Oceanic Ethnology) book series on 'rebuilding Palawa'<br><br>
+          
+          Rebe Taylor: (tasmanian) Aboriginal History, Vol. 32<br><br>
+          
+          JOURNAL ARTICLE The polemics of making fire in Tasmania: the historical evidence revisited by Rebe Taylor<br><br>
+          
+          H. LING ROTH. — ABORIGINES OF TASMANIA<br><br>
+          
+          https://trove.nla.gov.au/people/516905<br><br>
+          Tasmanian Mythological Terms
+E. A. Worms
+Anthropos
+          Tasmanian-mythological-terms https://www.jstor.org/stable/40453717?read-now=1&seq=3#page_scan_tab_contents<br><br>
+          
+          Oxford Latin and Grammar dictionary<br><br>
+          Historical language books.openedition.org<br><br>
+          The University of Adelaide - rare books and manuscripts   <br><br>
+          Journal of Astronomical History and Heritage, Vol. 19(1) - Trevor M. Leaman - School of humanities - https://arxiv.org/ftp/arxiv/papers/1601/1601.01065.pdf
+        
+          <br><br>
+          Eric Vaszolyi, Cambridge University ‘Aboriginal Australians Speak’
+          <br><br>
+          National library of Australia - Folio 88 D. Bates
+
+          <br><br>
+          Into the Heart of Tasmania -Historian: Rebe Taylor
+          <br><br>
+          Die tasmanischen Sprachen
+          By Wilhelm Schmidt 
+          <br><br>
+          'Aborigines of Tasmania' by James Erskine Calder.
+          <br><br>
+          ABORIGINES OF TASMANIA.—THE NORMAN
+          VOCABULARY
+          <br><br>
+
+          <br><br>
+
+          <br><br>
+
+          <br><br>
+
+    </div>
+    </nav>
+
+
+
+
+
+
+</div>
+<span style="margin-top:-1.5vh;line-height: 0.01vh !important;position:fixed;   margin-left:-5vw ;">scroll down</span>
+  <script  src="./script.js"></script>
+  <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

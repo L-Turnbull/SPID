@@ -1,0 +1,326 @@
+/* To Navigation Style */
+section {
+	padding: 1em 2em 5em;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+section p {
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 20px 0;
+}
+
+section button {
+	border: none;
+	padding: 15px 30px;
+	outline: none;
+	background: #85b91e;
+}
+
+@media screen and (max-width: 34em) {
+	.overlay {
+		font-size: 90%;
+	}
+	.overlay .overlay-close {
+		-webkit-transform: scale(0.5);
+		transform: scale(0.5);
+	}
+}
+
+/* style5 css */
+/* Overlay style */
+.overlay {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(3, 3, 3, 0.512);
+}
+
+/* Overlay closing cross */
+.overlay .overlay-close {
+	width: 80px;
+	height: 80px;
+	position: absolute;
+	left: 90vw;
+	top: 80vh;
+	overflow: hidden;
+	border: none;
+	background: url(https://tympanus.net/Development/FullscreenOverlayStyles/img/cross.png) no-repeat center center;
+	text-indent: 200%;
+	color: black;
+	outline: none;
+	background-color: rgba(16, 0, 0, 0.696);
+	z-index: 10999999999999999999999999999999999999999999999999990;
+	cursor: pointer;
+}
+
+
+
+
+
+/* Effects */
+.overlay-scale {
+	visibility: hidden;
+	opacity: 0;
+	-webkit-transform: scale(0.9);
+	transform: scale(0.9);
+	-webkit-transition: -webkit-transform 0.2s, opacity 0.2s, visibility 0s 0.2s;
+	transition: transform 0.2s, opacity 0.2s, visibility 0s 0.2s;
+}
+
+.overlay-scale.open {
+	visibility: visible;
+	opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);	
+	-webkit-transition: -webkit-transform 0.4s, opacity 0.4s;
+	transition: transform 0.4s, opacity 0.4s;
+}
+/*=====================================================================================*/
+/* TWO */
+.overlay-scale2 {
+	visibility: hidden;
+	opacity: 0;
+	-webkit-transform: scale(0.9);
+	transform: scale(0.9);
+	-webkit-transition: -webkit-transform 0.2s, opacity 0.2s, visibility 0s 0.2s;
+	transition: transform 0.2s, opacity 0.2s, visibility 0s 0.2s;
+}
+
+.overlay-scale2.open {
+	visibility: visible;
+	opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);	
+	-webkit-transition: -webkit-transform 0.4s, opacity 0.4s;
+	transition: transform 0.4s, opacity 0.4s;
+}
+/* Overlay style */
+.overlay2 {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(13, 13, 13, 0.512);
+}
+
+/* Overlay closing cross */
+.overlay2 .overlay-close2 {
+	width: 80px;
+	height: 80px;
+	position: absolute;
+	cursor: pointer;
+	left: 90vw;
+	top: 80vh;
+	overflow: hidden;
+	border: none;
+	background: url(https://tympanus.net/Development/FullscreenOverlayStyles/img/cross.png) no-repeat center center;
+	text-indent: 200%;
+	color: rgb(0, 0, 0);
+	outline: none;
+	background-color: rgba(16, 0, 0, 0.696);
+	z-index: 10999999999999999999999999999999999999999999999999990;
+}
+
+
+
+
+
+/*=====================================================================================*/
+/* THREE */
+.overlay-scale3 {
+	visibility: hidden;
+	opacity: 0;
+	-webkit-transform: scale(0.9);
+	transform: scale(0.9);
+	-webkit-transition: -webkit-transform 0.2s, opacity 0.2s, visibility 0s 0.2s;
+	transition: transform 0.2s, opacity 0.2s, visibility 0s 0.2s;
+}
+
+.overlay-scale3.open {
+	visibility: visible;
+	opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);	
+	-webkit-transition: -webkit-transform 0.4s, opacity 0.4s;
+	transition: transform 0.4s, opacity 0.4s;
+}
+/* Overlay style */
+.overlay3 {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(13, 13, 13, 0.512);
+}
+
+/* Overlay closing cross */
+.overlay3 .overlay-close3 {
+	width: 80px;
+	height: 80px;
+	position: absolute;
+	cursor: pointer;
+	left: 20px;
+	top: 80vh;
+	overflow: hidden;
+	border: none;
+	background: url(https://tympanus.net/Development/FullscreenOverlayStyles/img/cross.png) no-repeat center center;
+	text-indent: 200%;
+	color: rgb(0, 0, 0);
+	outline: none;
+	background-color: rgba(16, 0, 0, 0.696);
+	z-index: 10999999999999999999999999999999999999999999999999990;
+}
+
+
+/*=====================================================================================*/
+/* FOUR */
+.overlay-scale4 {
+	visibility: hidden;
+	opacity: 0;
+	-webkit-transform: scale(0.9);
+	transform: scale(0.9);
+	-webkit-transition: -webkit-transform 0.2s, opacity 0.2s, visibility 0s 0.2s;
+	transition: transform 0.2s, opacity 0.2s, visibility 0s 0.2s;
+}
+
+.overlay-scale4.open {
+	visibility: visible;
+	opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);	
+	-webkit-transition: -webkit-transform 0.4s, opacity 0.4s;
+	transition: transform 0.4s, opacity 0.4s;
+}
+/* Overlay style */
+.overlay4 {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(13, 13, 13, 0.512);
+}
+
+/* Overlay closing cross */
+.overlay4 .overlay-close4 {
+	width: 80px;
+	height: 80px;
+	position: absolute;
+	cursor: pointer;
+	left: 20px;
+	top: 80vh;
+	overflow: hidden;
+	border: none;
+	background: url(https://tympanus.net/Development/FullscreenOverlayStyles/img/cross.png) no-repeat center center;
+	text-indent: 200%;
+	color: rgb(0, 0, 0);
+	outline: none;
+	background-color: rgba(16, 0, 0, 0.696);
+	z-index: 10999999999999999999999999999999999999999999999999990;
+}
+
+
+/*=====================================================================================*/
+/* FIVE */
+.overlay-scale5 {
+	visibility: hidden;
+	opacity: 0;
+	-webkit-transform: scale(0.9);
+	transform: scale(0.9);
+	-webkit-transition: -webkit-transform 0.2s, opacity 0.2s, visibility 0s 0.2s;
+	transition: transform 0.2s, opacity 0.2s, visibility 0s 0.2s;
+}
+
+.overlay-scale5.open {
+	visibility: visible;
+	opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);	
+	-webkit-transition: -webkit-transform 0.4s, opacity 0.4s;
+	transition: transform 0.4s, opacity 0.4s;
+}
+/* Overlay style */
+.overlay5 {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(13, 13, 13, 0.512);
+}
+
+/* Overlay closing cross */
+.overlay5 .overlay-close5 {
+	width: 80px;
+	height: 80px;
+	position: absolute;
+	cursor: pointer;
+	left: 20px;
+	top: 80vh;
+	overflow: hidden;
+	border: none;
+	background: url(https://tympanus.net/Development/FullscreenOverlayStyles/img/cross.png) no-repeat center center;
+	text-indent: 200%;
+	color: rgb(0, 0, 0);
+	outline: none;
+	background-color: rgba(16, 0, 0, 0.696);
+	z-index: 10999999999999999999999999999999999999999999999999990;
+}
+
+
+
+/*=====================================================================================*/
+/* SIX */
+.overlay-scale6 {
+	visibility: hidden;
+	opacity: 0;
+	-webkit-transform: scale(0.9);
+	transform: scale(0.9);
+	-webkit-transition: -webkit-transform 0.2s, opacity 0.2s, visibility 0s 0.2s;
+	transition: transform 0.2s, opacity 0.2s, visibility 0s 0.2s;
+}
+
+.overlay-scale6.open {
+	visibility: visible;
+	opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);	
+	-webkit-transition: -webkit-transform 0.4s, opacity 0.4s;
+	transition: transform 0.4s, opacity 0.4s;
+}
+/* Overlay style */
+.overlay6 {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(13, 13, 13, 0.512);
+}
+
+/* Overlay closing cross */
+.overlay6 .overlay-close6 {
+	width: 80px;
+	height: 80px;
+	position: absolute;
+	cursor: pointer;
+	left: 20px;
+	top: 80vh;
+	overflow: hidden;
+	border: none;
+	background: url(https://tympanus.net/Development/FullscreenOverlayStyles/img/cross.png) no-repeat center center;
+	text-indent: 200%;
+	color: rgb(0, 0, 0);
+	outline: none;
+	background-color: rgba(16, 0, 0, 0.696);
+	z-index: 10999999999999999999999999999999999999999999999999990;
+}
+
+
+

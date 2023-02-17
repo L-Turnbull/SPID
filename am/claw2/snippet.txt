@@ -1,0 +1,1 @@
+<model-viewer src="oztira claw9.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1.38" autoplay animation-name="LightAction" auto-rotate shadow-softness="0.72" exposure="1.1" camera-orbit="-7.877deg 76.76deg 9.412m" field-of-view="37.5deg"> </model-viewer>

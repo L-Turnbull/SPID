@@ -1,0 +1,750 @@
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+<meta charset="UTF-8">
+<title>Amaurobiidae Morphology</title>
+<link type="text/css" href="./media.css" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./pop.css">
+<link rel="stylesheet" href="./brodal.css">
+<link rel="stylesheet" href="./tooltip.css">
+
+
+<style type="text/css">
+
+.clawdiv{
+  position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+}
+
+crib-text::-webkit-scrollbar-thumb:hover {
+background-image: url('images/thumb.svg');
+z-index: 99;
+height:0vh;
+background-repeat: no-repeat, no-repeat;
+margin-top:9vh;
+position: absolute;
+width:9vw;
+background-size: 5vw;
+background-position-y: 10vh;
+background-position-x: 3vw;
+overflow: visible;
+cursor:pointer;
+}
+.palpdiv{
+  position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+}
+
+crib-text::-webkit-scrollbar-thumb {
+background-image: url('images/thumb.svg');
+z-index: 99;
+height:100%;
+background-repeat: no-repeat, no-repeat;
+margin-top:-2vh;
+position: absolute;
+width:9vw;
+background-size: 5vw;
+background-position-y: 10vh;
+background-position-x: 3vw;
+overflow: visible;
+cursor: pointer;
+}
+
+crib-text::-webkit-scrollbar-track-piece {
+
+width: 1vw;
+margin-bottom:1vh;
+margin-top:15vh;
+background-repeat: no-repeat;
+background-size:5%;
+background-position: top;
+background-image: url(images/bar2.svg);
+  background-repeat: round;
+background-repeat: repeat-y;
+height:150%;
+  overflow: hidden;
+cursor:pointer;
+
+}
+.cribdiv{
+  position: absolute;
+    top: 55%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    z-index:9;
+}
+.jawdiv{
+  position: absolute;
+    top: 55%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    z-index:9;
+}
+
+
+.cal-text{
+  color:white; font-size: 1.9vw;
+ opacity:0;
+ margin-top:5vh;
+    padding:15px;
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+}
+
+.modal-close{
+  height:110vh;width:120vw;position:absolute;z-index:105;background-color: transparent; 
+}
+.palp-text{
+  color:white; font-size: 1.45vw;
+
+
+    padding:25px;
+    font-family: 'Roboto Mono', monospace;
+    text-align: left;
+}
+.claw-text{
+  color:white; font-size: 1.45vw;
+
+
+    padding:15px;
+    font-family: 'Roboto Mono', monospace;
+    text-align: left;
+}
+.palp-text li{
+  text-align: left;
+}
+.palp-text a{
+  color:white
+}
+.claw-text li{
+  text-align: left;
+}
+.claw-text a{
+  color:white
+}
+.jaw-text{
+  color:rgb(3, 0, 0); font-size: 1.45vw;
+  font-weight: 700;
+background-color: white;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    box-shadow: -3px 4px 4px 3px rgba(0, 0, 0, 0.318);
+    padding:15px;
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+}
+.jaw-text li{
+  text-align: left;
+}
+.jaw-text a{
+  color:rgb(0, 0, 0)
+}
+.warn{
+  height:100vh; width:100vw; color:black; background-color:white;position:absolute; z-index: 99999999999999999;text-align: center; display:none; position:fixed;font-size:2em
+}
+
+  @media only screen 
+and (min-device-width: 200px) 
+and (max-device-width: 415px) 
+ {
+  .warn{display:block;
+			
+		}
+}
+.hot{
+    position: absolute;
+    background-color: red;
+    height:10vh;
+    width:10vw;
+    margin-top:5vh;
+    margin-left:10vw;
+    z-index:99;
+  }
+  .model-mum2{
+    display:none;
+  }
+  .active .model-mum2,
+  .hot2{
+    display:block;
+  }
+  .hot2{
+    position: absolute;
+    background-color: rgb(0, 255, 64);
+    height:10vh;
+    width:10vw;
+    margin-top:5vh;
+    margin-left:10vw;
+    display:none;
+  }
+  .active .model-mum{
+    display:none;
+  }
+@keyframes fade-in{
+
+  0%{
+    height:0vh;
+    opacity:0
+  }
+  100%{ height:50vh;
+  opacity:1;}
+}
+
+.pic{
+    display:none;
+ width:0vw;
+    position:fixed;
+   margin-top:50%;
+   margin-left:50%;
+   transform: translateX(-50%) translateY(-50%);
+  }
+  .tool2{ white-space:nowrap !important;}
+  .tool:hover .pic{
+    transition: all 2s ease;
+    display:flex;
+    padding:2%;
+    width:300px;
+    height:400px;
+    position:absolute;
+    margin-top:20%;
+   margin-left:100%;
+   transform: translateX(80%) translateY(-80%);
+  filter:drop-shadow(-2px 2px 2px black)
+  }
+  .tool4{
+    color:rgb(226, 168, 117);
+  }
+  .tool4:hover .pic{
+    transition: all 2s ease;
+    display:flex;
+    padding:2%;
+    width:300px;
+    height:400px;
+    position:absolute;
+    z-index:999;
+    margin-top:0%;
+   margin-left:10%;
+   position: absolute;
+   transform: translateX(-20%) translateY(-100%);
+  filter:drop-shadow(-2px 2px 2px black);
+  white-space:nowrap;
+  color:brown;
+  }
+  .is-blurred {
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+}
+</style>
+</head>
+
+<a href="javascript:;" onmousedown="toggleDiv('mydiv');"><button style="
+width:12vw;
+cursor:pointer; 
+margin-top:2vh;
+position: absolute;
+z-index: 99999999999;
+background-color: transparent; 
+height:7vh;
+margin-left:1vw;
+border:none"></button></a>
+  
+<!--
+      To compensate check out this crazy <br>spider article - <span id="trigger-overlay3" type="button" style="text-decoration: underline; cursor:pointer">Necrobots</span>-->
+  
+<body class="view-survey">
+<!--=======================  MODAL-BOOK=======================================================-->
+<div fetchpriority="low" class="tnd-modal" id="modal-book" style="height:60vh;margin-top:0vh;width:100vw; margin-left:0vw;">      
+  <button class="modal-close" type="button" style="  height:7vh;width:5vw;position:absolute;z-index:999999900099;background-color: rgba(255, 255, 255, 0.407);margin-top:-4vh;margin-left:4vw;cursor:pointer">X</button>
+  <div class="clawdiv">
+    <div class="col">
+      <div class="tnd-modal-container">
+        <div class="tnd-modal-header">
+  <div class="tnd-modal-body text-center" style="color:white; font-size: 1.85vw;">
+<iframe class="book" style="width:100vw;height:110vh;margin-top:10vh;margin-left:13vw;" src="book/book.html"></iframe>
+  </div>
+  <div class="tnd-modal-footer justify-content-between d-flex">
+  </div></div></div>
+  </div></div></div>
+  <!--=======================  CLAW BRODAL =======================================================-->
+<div fetchpriority="low" class="brodal-page brodal" id="brodal-claw" style="height:70vh;padding:none !important">
+
+<div class="brodal-close" style="position:absolute; margin-left:-20vw !important; padding-right:48vw; z-index:120 !important; margin-top:35vh; height:60vh; background-color: rgba(255, 192, 203, 0); width:100vw !important; filter: blur(12px);
+  -webkit-filter: blur(12px);"></div>
+
+<iframe scrolling="no" class="spot" src="spotlight.html" style="position:absolute; height:110vh; width:50vw; position:absolute; z-index:119; margin-left:40vw; border:none; margin-top:0vh;"></iframe> 
+
+
+
+<iframe class="extras" src="claw2/claw.html" style="width:40vw !important; height:50vh;border:none;filter:none; box-shadow: none;margin-left:55vw;position:absolute;z-index:120; margin-top:40vh;"><p style="color:white">Oztira affinis claw</p></iframe>
+
+<div class="brodal-container" style="background-image: url(images/b-card.JPG);background-size: 100% 100%; width:90vw;position:absolute; z-index:115;margin-left:5vw; margin-top:2vh;">
+
+  <div class="claw-text" style=" width:65vw;position:fixed;margin-top:3vh; box-sizing: content-box; display: inline;margin-left:20vw;"> Two paired claws and an accessory.  V.T.Davies  Tasmanian Amaurobiidae descriptions note the presence of three claws but do not describe or illustrate them.  Thus of the four genera only Oztira has visual authenticity of this trait, appearing in G.A.Milledge's paper(link below).</a> The image to the left is Oztira affinis from Milledge's article.  The 3d-model is also O. affinis.  <br><br>
+    <a href="#shmodal3" class="open-shmodal">Milledge-Oztira.</a></div>
+
+  <div class="brodal-header" style="margin-left:5vw;background-image:url(images/claws.png);background-color: transparent;background-size: 100% 100%;width:30vw; height:20vh;margin-top:75vh;">
+    </div> 
+    <div class="bro-baby" style="background-image: url(images/oa.JPG);background-size:100% 100%;height:25vh; width:15vw; margin-top:3vh; margin-left:3vw;"></div>
+
+  
+
+</div> <div class="blackout" style="position:fixed; z-index:5 !important; width:100vw;height:100vh; margin-top:0vh; margin-left:-10vw; "> 
+  <object class="spot" type="image/svg+xml" data="black.svg" style="position:absolute; height:110vh; width:140vw;"></object> 
+ </div>
+</div>
+
+</div>
+<!--=======================  CRIBELLUM BRODAL =======================================================-->
+
+<div fetchpriority="low" class="brodal-page brodal" id="brodal-crib" style="margin-top:48vh; margin-left:1vw;">
+  
+  <div class="brodal-close" style="position:absolute; margin-left:-35vw;padding-right:140vw;z-index:89!important;margin-top:-60vh; height:160vh;background-color:transparent"></div>
+  <div class="brodal-container" style="background-image: url(images/b-card.JPG);background-size: 100% 100%; width:90vw; z-index: 120; position:absolute; margin-left:4vw; transform: scaleY(1.3) translateY(2vh) !important;">
+
+
+    <div class="hideme"></div>
+      <!--TITLE-->
+   <img class="palp-pic" src="images/crib.svg" style="margin-top:-20vh; position:absolute; width:28vw; margin-left:66vw; z-index:55;">
+
+   <div class="crib-text">
+  
+    The Cribellum, when present, is  located underneath the spinnerets, it has a similar appearance to the rough pad of a cats' paw. The Cribellum and Calamistrum, like violin and bow, are used together to pluck the fine silk into a 'wooly' texture.
+    Not all spiders have a cribellum, not even all Amaurobiids have one. <br><br>At one stage all cribellate spiders were placed into a single family, this was further refined to full and divided cribellum.  Eventually it was not regarded as the sole diagnostic and members were placed into other families.<p style="display:inline;text-decoration: underline; cursor:pointer;" href="#shmodal4" class="open-shmodal">(Lehtinen_1967)</p> 
+    <br>
+    <br> 
+   V. T. Davies' papers seems to suggest all tasmanian genera are ecribellate  (without cribellum). <br><br>
+   <p style="display:inline;text-decoration: underline; cursor:pointer;"href="http://www.jeremypoolesem.org.uk/" target="_new">Image by Jeremy Poole</p>
+
+    </div>
+      
+       <div class="bro-baby" style="width:55vw !important; background-image: url(); background-color: transparent;background-size:100% 100%;height:35vh; position:absolute;margin-left:-2.5vw; margin-top:2vh;"></div>
+
+
+     
+
+ 
+  </div>
+  </div>
+  <!--=======================  JAWS BRODAL =======================================================-->
+
+  <div fetchpriority="low" class="brodal-page brodal" id="brodal-jaw" >
+
+ <div class="brodal-close" style="position:absolute; margin-left:0vw !important; padding-right:48vw; z-index:120 !important; margin-top:-35vh; height:150vh; background-color: #ffc0cb00; width:100vw !important; filter: blur(12px);
+        -webkit-filter: blur(12px);"></div>    
+    <iframe scrolling="no" class="spot" src="spotlight.html" style="position:absolute; height:110vh; width:100vw;position:absolute; z-index:119; margin-left:17vw; border:none; margin-top:-10vh;"></iframe> 
+
+       
+
+        <iframe style="position:absolute; z-index:120;width:30vw;height:100vh;margin-left:60vw !important; margin-top:20vh !important;" class="jframe" fetchpriority="low" scrolling="no"  src="jaw/jaw.html"></iframe>
+
+    <div class="brodal-containertwo" style="background-image: url(images/b-card.JPG);background-size: 100% 100%;height:70vh;position:absolute; z-index:121 !important; margin-left:3vw;width:50vw;margin-top:2vh !important;">
+  
+     
+
+
+                <ul class="jaw-wordstwo" style="float:left; color:white;position:relative;margin-top:-2vh;">
+<img class="jpic" src="jaw/hick-oztira-aff.JPG" ><p class="jp" >After a lengthy search little was revealed on the jaw particulars of Tassy Amaurobiids. Davies papers supply only anecdotal descriptions of chelicera.  Vernon Victor Hickman's 1981 paper, however provides a line drawing of Oztira affinus.  From this an approximate recreation could be made  in 3d model form.
+<br><br>
+A few paragraphs from Hichman's work:'Chelicerae  <span class="tool2" tooltip="geniculate='sharply-bent' ( pos. meant inflectere='slightly-bent')">slightly geniculate,</span> with lateral <span class="tool2" tooltip="knobs">condyles.</span> Clothed in front with a few
+long <span class="tool2" tooltip="hairs">setae.</span><br><br><span class="tool2" tooltip="back-of-jaws area between sets of teeth">Furrow </span> is <span class="tool2" tooltip="slanting">oblique,</span> promargin with six teeth, the distal four shorter than the
+others, retromargin with two teeth. Promarginal <span class="tool2" tooltip="typo for scopula='hair-tuft'">scapula </span>of ten barbed setae (not included in picture or model). Fang well
+curved.' <br><br>
+     
+        <a href="#shmodal2" class="open-shmodal">Hickman-Oztira</a>
+       
+
+
+     </ul></p> 
+</div>
+<!--TITLE-->
+<img fetchpriority="low" class="palp-pic" src="images/chel-title.svg" style="height:20vh;margin-top:74vh;width:35vw; margin-left:10vw;position:absolute;z-index:99 !important;border-radius: 20%;pointer-events: none;">
+
+<div class="palp-text" style=" width:90vw;position:fixed;margin-top:-5vh; box-sizing: content-box; display: inline-flex;"></div>    
+        
+<div class="jfhug" >
+<div class="jfhugtwo">
+
+
+</div>
+</div>
+
+<div class="blackout" style="position:fixed; z-index:5 !important; width:100vw;height:100vh; margin-top:0vh; margin-left:-10vw; "> 
+  
+  <object class="spot" type="image/svg+xml" data="black.svg" style="position:absolute; height:110vh; width:140vw;"></object>  </div>
+   
+    </div>
+     
+    <!--=======================  PALP BRODAL =======================================================-->
+    
+  <div class="brodal-page brodal" id="brodal-palp">
+ 
+    <div class="brodal-container" style="background-image: url(images/b-card.JPG);background-size: 100% 100%; width:90vw;">
+
+
+      <div class="hideme"></div>
+        <!--TITLE-->
+     <img class="palp-pic" src="images/palps.png" style="margin-top:20vh;position:absolute; width:28vw;margin-left:68vw;z-index:15;">
+
+      <div class="palp-text" style=" width:90vw;position:fixed;margin-top:-5vh; box-sizing: content-box; display: inline-flex;">      
+        
+         <div class="bro-baby" style="width:51vw !important; background-image: url(images/tp.png); background-color: transparent;background-size:100% 100%;height:32vh; position:absolute;margin-left:1vw; margin-top:5vh;"></div>
+  
+        <ul style="margin-left:51vw; padding-right:5vw; padding-top:4vh;">
+         The palp pictured is of <a href="https://biostor.org/reference/236983" target="_new">Teeatta driesseni. </a>
+     V.T.Davies describes this and others in the links below:<br><br>
+      <li>
+     <a id="trigger-overlay" type="button" style="cursor:pointer;">Tasmabochus</a></li>
+      <br> 
+      <br> 
+      <li>
+        <a id="trigger-overlay2" type="button" style="cursor:pointer;">Teeata</a></li>
+      <br>  <br> 
+      <li> <a href="#shmodal" class="open-shmodal">Tasmarubrius</a> </li>
+     </ul>   
+        </div> 
+
+    <div class="brodal-close" style="position:absolute; margin-left:-35vw;padding-right:120vw;z-index:99!important;margin-top:40vh; height:60vh;background-color: transparent;"></div>
+    </div>
+    </div>
+  
+  <!--=======================  CALAMISTRUM MOD =======================================================-->
+
+
+  <div class="brodal-page brodal" id="brodal-cal">
+ 
+    <div class="brodal-container" style="background-image: url(images/b-card.JPG);background-size: 100% 100%; width:90vw;">
+
+
+      <div class="hideme"></div>
+        <!--TITLE-->
+     <img class="palp-pic" src="images/cal.png" style="height:15vh;margin-top:60vh;width:40vw; margin-left:10vw;position:absolute;">
+
+      <div class="palp-text" style=" width:90vw;position:fixed;margin-top:-5vh; box-sizing: content-box; display: inline-flex;">      
+        
+         <div class="bro-baby" style="width:55vw !important; background-image: url(images/am-cal.svg); background-color: transparent;background-size:100% 100%;height:35vh; position:absolute;margin-left:-10.5vw; margin-top:1vh;"></div>
+  
+        <ul style="margin-left:28vw; padding-right:5vw; padding-top:9vh;">
+Every Swiss-army-spider holsters a back leg mo-hawk for silk manufacture on the fly.<br>
+Sadly evolutionary cutbacks omitted this feature in the Tasmanian Amaurobiids.  They do, however, have modified stiff hairs for preening.<br><br>
+
+     </ul>   
+        </div> 
+
+    <div class="brodal-close" style="position:absolute; margin-left:-35vw;padding-right:120vw;z-index:99!important;margin-top:40vh; height:60vh;background-color: transparent;"></div>
+    </div>
+    </div>
+    
+<!--=======================  3D MODEL =======================================================-->
+<div id="mydivon" style="display:block"><p style="margin-top:3vh;position:absolute; margin-left:2vw;box-shadow: -2px 3px 4px rgba(0, 0, 0, 0.737);border-top: 2px solid rgb(189, 189, 189);border-right: 2px solid rgb(122, 122, 122);border-left:2px solid black;padding:2px;text-shadow: -1px 1px 1px grey;color:rgb(31, 30, 30);">hide labels</p>
+<span class="model-mum">
+<model-viewer class="model-viewer" id="hotspot-camera-view-demo" src="am7.glb" alt="Amaurobiidae"
+camera-controls touch-action="none"   
+camera-target="4.13m 26.92m -78.17m" camera-orbit="50.08deg 83.93deg 354.1m" field-of-view="30deg"
+shadow-intensity="2"
+interaction-prompt="none" 
+data-position="-29.78deg 56.41deg 403.7m"
+data-normal="1.13m -2m -76.96m"  
+style="margin-top:2vh">
+
+
+   <!--==============================================================================-->           
+<!--EYES BUTTON-->	
+
+<button class="Hotspot-eye view-button" slot="hotspot-0" 
+data-position="7.3618828425435563m 28.82740913910811m -66.54634728150486m" 
+data-orbit="1.421e-14deg 79.48deg 403.7m"
+data-target="1.1879433m 5m  -76.96m" 
+style="background-color: transparent;">
+  
+<div class="HotspotAnnotation view-button" 
+data-orbit="1.421e-14deg 79.48deg 403.7m"	
+data-target="1.1879433m 5m  -76.96m" >
+EYES
+<g style="color:rgb(209, 209, 209);margin-left:-10% !important;font-family: 'Roboto Mono', monospace; margin-top:calc(22vh * 30px)">
+    Always the polite way to start introductions; looking into our new friend's eyes will often provide clues as to which family they may  belong.
+      <br>
+      <br> Two rows of small, evenly-sized, eyes make Amaurobiidae. Their eyes are right up front on handsomely open faces.  Their heads (*cephalothorax) are both rounded and squared in the impossible fashion attained by wombats.<br><br> Image courtesy of Jeremy Poole.
+      
+</g>
+<g><img class="imgpop"src="images/eyes-big.svg"><g></div>
+</button>      
+
+
+   <!--==============================================================================-->           
+<!--CRIBELLUM  BUTTON-->	
+
+<button class="Hotspot view-button brodal-trigger"  data-target="brodal-crib" slot="hotspot-17" 
+data-position="-3.6151110408943055m 30.07978408823368m -147.14996130034095m"
+data-normal="0.2817381512495882m -0.6074247896908876m 0.7427373284004548m"   
+data-orbit="180.7deg 157.5deg 408.6m"
+data-target="4.49m 13.18m -74.96m"   
+style="background-color: transparent;">
+
+<div class="HotspotAnnotation view-button"  
+data-orbit="180.7deg 157.5deg 408.6m"
+data-target="4.49m 13.18m -74.96m">
+Cribellum
+</div>
+</button>  
+
+   <!--==============================================================================-->           
+<!--3 Claws  BUTTON-->	
+<button class="Hotspot-claw2 view-button brodal-trigger" data-target="brodal-claw" slot="hotspot-1" 
+data-position="77.3740609857007m 39.06390408717756m -27.81759562089161m" 
+data-normal="0.12352480444142172m 0.4359695943687888m 0.8914438487496688m" 
+data-visibility-attribute="visible"
+data-orbit="64.69deg 57.55deg 407.5m" field-of-view="30deg"
+data-target="4.49m 13.18m -74.96m">
+
+  <div class="HotspotAnnotation view-button"  
+  data-orbit="64.69deg 57.55deg 407.5m" field-of-view="30deg"
+  data-target="4.49m 13.18m -74.96m">
+3 Claws
+  </div>
+
+</button>
+
+   <!--==============================================================================-->           
+<!--JAWS  BUTTON-->	
+  <button class="Hotspot-jaw view-button brodal-trigger"  data-target="brodal-jaw"  slot="hotspot-6" data-position="9.599942588254292m 7.486451919434488m -63.3082963910907m" data-normal="0.42101492589533196m -0.3977041048472985m 0.8152164603103629m" data-visibility-attribute="visible"
+  data-orbit="11.6deg 93.21deg 295.2m"  field-of-view="17.6deg" 
+  data-target="4.49m 13.18m -74.96m" >
+
+  <div class="HotspotAnnotation view-button"  
+  data-orbit="11.6deg 93.21deg 295.2m"  field-of-view="17.6deg" 
+  data-target="4.49m 13.18m -74.96m" >
+    Jaws</div>
+  </button>
+
+  
+   <!--==============================================================================-->           
+<!--PALP  BUTTON-->	
+  <button class="Hotspot-palp view-button brodal-trigger"  data-target="brodal-palp" slot="hotspot-7" data-position="-12.389444819114331m 13.373769192024106m -50.73698111588589m" data-normal="-0.14904216428846526m -0.32952506851060187m 0.9323087806554722m" data-visibility-attribute="visible"
+  data-target="4.49m 13.18m -74.96m"
+  data-orbit="56.63deg 94.07deg 244.6m" field-of-view="13.48deg" field-of-view="13.48deg"">
+  Palps
+  </button>
+ 
+   <!--==============================================================================-->           
+<!--EPIGYNE  BUTTON-->	 
+  <button class="Hotspot-epi view-button" slot="hotspot-8" data-position="-3.283081902576741m 9.261670017441395m -116.77330264223538m" data-normal="0.23779948017900635m -0.5875319719493481m 0.7734711301424926m" data-visibility-attribute="visible"
+  data-target="4.49m 13.18m -74.96m"
+  data-orbit="-93.03deg 133deg 407.5m" field-of-view="36.59deg">
+<t>Epigyne</t>
+<div class="hide">
+  <g>The female reproductive organ. Located:  <span class="tool2" tooltip="under the bum"> abdo-ventrally.</span>See 'palps' for list of links that include illustrations of Tasmanian Amaurobiid reproductive organ characteristics.</g>
+</div>
+  </button>
+
+  <!--   CALAMISTRUM-->
+  <button class="Hotspot-cal view-button brodal-trigger"  data-target="brodal-cal" slot="hotspot-27" 
+  data-position="28.6151110408943055m 30.07978408823368m -147.14996130034095m"
+  data-normal="0.2817381512495882m -0.6074247896908876m 0.7427373284004548m"   
+  data-visibility-attribute="visible"
+  data-target="4.49m 13.18m -74.96m"
+  data-orbit="129deg 83.41deg 303.3m" field-of-view="30deg">
+  
+  <div class="HotspotAnnotation view-button" >
+ Calamistrum
+  </div>
+  </button>  
+
+
+<!--===============================  3D MODEL END ===============================================-->
+  </model-viewer></div>
+<!--===============================  3D MODEL END ===============================================-->
+
+
+
+ 
+<span style="margin-top:60vh;position:absolute;">
+  <p style="position:absolute; z-index:9; font-family: 'Ephesis', cursive; font-size: 8vw;color:rgb(215, 201, 218);text-shadow: -2px 2px 2px black; margin-left:1vw; opacity:0.2; line-height:5vh"> Appearance
+  <a style="font-family:'XTypewriter'; font-size:2vw;line-height:1vh;margin-left:20vw;color:black; text-shadow: none;">(Morphology)</a></p></span>
+</span>  
+<div class="warn"><br><br><br><br><br><br><br><br><br><br><br><br><img src="images/ls.svg" style="width:180vw;margin-left:-40vw;"></div>
+<!--<div class="rex"></div>
+  <div class="rex2"></div>-->
+  
+  
+
+
+<!--===============================  NO  HOTSPOTS   ===============================================-->
+<div id="mydivoff" style="display:none"><p style="margin-top:3vh;position:absolute; margin-left:1.5vw; box-shadow: -2px 3px 4px rgba(0, 0, 0, 0.737);border-top: 2px solid rgb(189, 189, 189);border-right: 2px solid rgb(122, 122, 122);border-left:2px solid black;padding:2px; text-shadow: -1px 1px 1px grey;color:rgb(31, 30, 30);">show labels</p>
+
+<!--=============================== TWO 3D MODEL  ===============================================-->
+  <model-viewer id="hotspot-camera-view-demo" src="no-hot.glb" alt="Amaurobiidae"
+  camera-controls touch-action="none"   
+  camera-target="4.13m 26.92m -78.17m" camera-orbit="50.08deg 83.93deg 354.1m" field-of-view="30deg"
+  shadow-intensity="2"
+  interaction-prompt="none" 
+  data-position="-29.78deg 56.41deg 403.7m"
+  data-normal="1.13m -2m -76.96m"  
+  style="margin-top:2vh">
+  <!--=============================== TWO 3D MODEL END ===============================================-->
+    </model-viewer></div>
+
+<!--=============================== TWO 3D MODEL END ===============================================-->
+
+
+
+<!--===============================  PDF POPUP MODALS===============================================-->
+
+    <!--MODAL TASMARUBRIUS-->
+    <div class="overlay overlay-scale" style="position:absolute; z-index:99999999999; padding:5vw;margin-top:-3vh;">
+      <button type="button" class="overlay-close">Close</button>
+      <iframe  src="b2.pdf#view=FitH/FitW" style="position:absolute; height:90vh; width: 90vw;">  </iframe>
+    </div>
+
+<!--MODAL TEEATTA-->
+        <div class="overlay2 overlay-scale2" style="position:absolute; z-index:99999999999; padding:5vw;margin-top:-3vh;">
+          <button type="button" class="overlay-close2">Close</button>
+          <iframe  src="Teeatta.pdf#view=FitH/FitW" style="position:absolute; height:90vh; width: 90vw;" fetchpriority="low">  </iframe>
+        </div>
+
+<!--MODAL NECROBOTS-->
+        <div class="overlay3 overlay-scale3" style="position:absolute; z-index:99999999999; padding:5vw;margin-top:-3vh;">
+          <button type="button" class="overlay-close3">Close</button>
+          <iframe  src="necrobots.pdf#view=FitH/FitW" style="position:absolute; height:90vh; width: 90vw;" fetchpriority="low">  </iframe>
+        </div>
+
+<div id="shmodal" class="shmodal-wrap closed" style="z-index:120; position:absolute;">
+          <div class="shmodal">
+            <a href="#" class="shmodal-close">&times;</a>
+         
+            <iframe  src="Tasmarubrius.pdf#view=FitH/FitW" style="position:absolute; height:90vh; width: 90vw;margin-left:4vw;margin-top:2vh;" fetchpriority="low" SameSite>  </iframe>
+          </div>
+        </div>
+        
+
+<div id="shmodal2" class="shmodal-wrap closed" style="z-index:120; position:absolute;">
+          <div class="shmodal">
+            <a href="#" class="shmodal-close">&times;</a>
+            <div style="background-color: beige; box-shadow: -2px 2px 2px black; width:20vw; height:15vh;position:absolute; z-index:9999999999999999999999999;margin-top:15vh;padding:3px; margin-left:3vw; font-size: 2vw;"> Oztira appears on page 16.  It was described as 'Otira' by Hickman at the time.</div>
+            <iframe  src="ozt.pdf#view=FitH/FitW" style="position:absolute; height:90vh; width: 90vw;margin-left:4vw;margin-top:2vh;" SameSite="Lax" fetchpriority="low" crossorigin>  </iframe>
+          </div>
+        </div>
+        
+<div id="shmodal3" class="shmodal-wrap closed" style="z-index:120; position:absolute; height:100vh;">
+  <div class="shmodal">
+    <a href="#" class="shmodal-close">&times;</a>
+ 
+    <iframe  src="Ozzy.pdf#view=FitH/FitW" style="position:absolute; height:90vh; width: 90vw;margin-left:4vw;margin-top:2vh;" fetchpriority="low" SameSite>  </iframe>
+  </div>
+</div>
+
+<div id="shmodal4" class="shmodal-wrap closed" style="z-index:120; position:absolute; height:100vh;">
+  <div class="shmodal">
+    <a href="#" class="shmodal-close">&times;</a>
+ 
+    <iframe  src="crib.pdf#view=FitH/FitW" style="position:absolute; height:90vh; width: 90vw;margin-left:4vw;margin-top:2vh;" fetchpriority="low" SameSite>  </iframe>
+  </div>
+</div>
+
+
+
+<div id="shmodal5" class="shmodal-wrap closed" style="z-index:120; position:absolute; height:100vh;">
+  <div class="shmodal">
+    <a href="#" class="shmodal-close">&times;</a>
+ 
+    <iframe  src="Ozzy.pdf#view=FitH/FitW" style="position:absolute; height:90vh; width: 90vw;margin-left:4vw;margin-top:2vh;" fetchpriority="low" SameSite>  </iframe>
+  </div>
+</div>
+
+
+
+<!--========= SCRIPT=====================================================================-->
+
+    <script src='https://code.jquery.com/jquery-3.2.1.min.js'></script><script  src="./pop.js"></script>
+
+
+
+ <!--LABELS ON OFF FOR MODEL-->
+ <script>
+  function toggleDiv(divid)
+    {
+   
+      varon = divid + 'on';
+      varoff = divid + 'off';
+   
+      if(document.getElementById(varon).style.display == 'block')
+      {
+      document.getElementById(varon).style.display = 'none';
+      document.getElementById(varoff).style.display = 'block';
+      }
+     
+      else
+      {  
+      document.getElementById(varoff).style.display = 'none';
+      document.getElementById(varon).style.display = 'block'
+      }
+  } 
+    </script>
+  
+
+
+  <script src='js/ajax 2.2.2.js'></script>
+  <script  src="./simpmod.js"></script>
+  <script src='js/buttstrap.js'></script>
+  <script type="module" src="js/viewer.js"></script>
+ <script  src="./brodal.js"></script>
+  <script src='js/tween.js' crossorigin></script>
+  <script  src="js/mods.js"></script>
+  <script  src="./tooltip.js"></script>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Ephesis&family=Petit+Formal+Script&family=Shadows+Into+Light&family=Tangerine:wght@700&display=swap" rel="stylesheet"crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Raleway:wght@100;300&family=Roboto+Mono:wght@100&family=Shadows+Into+Light&display=swap" rel="stylesheet"crossorigin>
+ <link rel="preconnect" href="https://fonts.googleapis.com"crossorigin>
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap" rel="stylesheet"crossorigin>
+
+</body>
+
+</html>
+
+<script>
+  $(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();   
+  });
+  </script>
+  
+<script type="module">
+  const modelViewer2 = document.querySelector("#hotspot-camera-view-demo");
+  const annotationClicked = (annotation) => {
+    let dataset = annotation.dataset;
+    modelViewer2.cameraTarget = dataset.target;
+    modelViewer2.cameraOrbit = dataset.orbit;
+    modelViewer2.fieldOfView = '45deg';
+  }
+
+  modelViewer2.querySelectorAll('button').forEach((hotspot) => {
+    hotspot.addEventListener('click', () => annotationClicked(hotspot));
+  });
+</script>
+
+<style type="text/css">
+  .view-button {
+      background: rgba(255, 255, 255, 0.537);
+      border-radius: 4px;
+      border: none;
+      box-sizing: border-box;
+   
+      color: rgba(0, 0, 0, 0.8);
+      display: block;
+      font-family: XTypewriter;
+      font-size: 12px;
+      font-weight: 700;
+      max-width: 128px;
+      overflow-wrap: break-word;
+      padding: 0.5em 1em;
+      position: absolute;
+      width: max-content;
+      height: max-content;
+      transform: translate3d(-50%, -50%, 0);
+    }
+</style>

@@ -1,0 +1,250 @@
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+<meta charset="UTF-8">
+<title>Amaurobiidae Morphology</title>
+<link type="text/css" href="./media.css" rel="stylesheet"/>
+<style type="text/css">
+  
+.clawdiv{
+  position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+}
+
+crib-text::-webkit-scrollbar-thumb:hover {
+background-image: url('images/thumb.svg');
+z-index: 999;
+height:0vh;
+background-repeat: no-repeat, no-repeat;
+margin-top:9vh;
+position: absolute;
+width:9vw;
+background-size: 5vw;
+background-position-y: 10vh;
+background-position-x: 3vw;
+overflow: visible;
+cursor:pointer;
+}
+.palpdiv{
+  position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+}
+
+crib-text::-webkit-scrollbar-thumb {
+background-image: url('images/thumb.svg');
+z-index: 999;
+height:100%;
+background-repeat: no-repeat, no-repeat;
+margin-top:-2vh;
+position: absolute;
+width:9vw;
+background-size: 5vw;
+background-position-y: 10vh;
+background-position-x: 3vw;
+overflow: visible;
+cursor: pointer;
+}
+
+crib-text::-webkit-scrollbar-track-piece {
+
+width: 1vw;
+margin-bottom:1vh;
+margin-top:15vh;
+background-repeat: no-repeat;
+background-size:5%;
+background-position: top;
+background-image: url(images/bar2.svg);
+  background-repeat: round;
+background-repeat: repeat-y;
+height:150%;
+  overflow: hidden;
+cursor:pointer;
+
+}
+.cribdiv{
+  position: absolute;
+    top: 55%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    z-index:9;
+}
+.jawdiv{
+  position: absolute;
+    top: 55%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    z-index:9;
+}
+
+.crib-text{
+  color:white; font-size: 1.45vw;
+    background-image: url(images/b-card.JPG);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    box-shadow: -3px 4px 4px 3px rgba(0, 0, 0, 0.318);
+    padding:15px;
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+}
+.crib-text li{
+  text-align: left;
+}
+.crib-text a{
+  color:white
+}
+.modal-close{
+  height:110vh;width:120vw;position:absolute;z-index:9999999;background-color: transparent; 
+}
+.palp-text{
+  color:white; font-size: 1.45vw;
+    background-image: url(images/b-card.JPG);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    box-shadow: -3px 4px 4px 3px rgba(0, 0, 0, 0.318);
+    padding:15px;
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+}
+.palp-text li{
+  text-align: left;
+}
+.palp-text a{
+  color:white
+}
+
+.jaw-text{
+  color:rgb(3, 0, 0); font-size: 1.45vw;
+  font-weight: 700;
+background-color: white;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    box-shadow: -3px 4px 4px 3px rgba(0, 0, 0, 0.318);
+    padding:15px;
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+}
+.jaw-text li{
+  text-align: left;
+}
+.jaw-text a{
+  color:rgb(0, 0, 0)
+}
+.warn{
+  height:100vh; width:100vw; color:black; background-color:white;position:absolute; z-index: 99999999999999999;text-align: center; display:none; position:fixed;font-size:2em
+}
+
+  @media only screen 
+and (min-device-width: 200px) 
+and (max-device-width: 400px) 
+ {
+  .warn{display:block;
+			
+		}
+}
+
+.Hotspot-jaw,
+.view-button
+{
+  display:none;
+}
+</style>
+</head>
+
+
+<body class="view-survey">
+
+
+
+<!--=======================  3D MODEL =======================================================-->
+
+<span class="model-mum">
+<model-viewer id="hotspot-camera-view-demo" src="no-hot.glb" alt="Amaurobiidae"
+camera-controls touch-action="none"   
+camera-target="4.13m 26.92m -78.17m" camera-orbit="50.08deg 83.93deg 354.1m" field-of-view="30deg"
+shadow-intensity="2"
+interaction-prompt="none" 
+data-position="-29.78deg 56.41deg 403.7m"
+data-normal="1.13m -2m -76.96m"  
+style="margin-top:2vh">
+
+
+  
+
+
+
+
+  </model-viewer>
+  
+<span style="margin-top:60vh;position:absolute;">
+  <p style="position:absolute; z-index:9; font-family: 'Ephesis', cursive; font-size: 8vw;color:rgb(215, 201, 218);text-shadow: -2px 2px 2px black; margin-left:1vw; opacity:0.2; line-height:5vh"> Appearance
+  <a style="font-family:'XTypewriter'; font-size:2vw;line-height:1vh;margin-left:20vw;color:black; text-shadow: none;">(Morphology)</a></p></span>
+</span>  
+<div class="warn"><br><br><br><br><br><br><br><br><br><br><br><br><img src="images/ls.svg" style="width:180vw;margin-left:-40vw;"></div>
+<div class="rex"></div>
+  <div class="rex2"></div>
+<!--==============================================================================-->
+
+<!--==============================================================================-->
+  <script src='js/ajax 2.2.2.js'></script>
+  <script src='js/buttstrap.js'></script>
+  <script type="module" src="js/viewer.js"></script>
+  <script type="module" src="js/viewer2023.js"></script>
+  <script src='js/tween.js'></script>
+ <script  src="js/brodal.js"></script>
+
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Ephesis&family=Petit+Formal+Script&family=Shadows+Into+Light&family=Tangerine:wght@700&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Raleway:wght@100;300&family=Roboto+Mono:wght@100&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap" rel="stylesheet">
+  
+</body>
+</html>
+<script>
+  $(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();   
+  });
+  </script>
+  
+<script type="module">
+  const modelViewer2 = document.querySelector("#hotspot-camera-view-demo");
+  const annotationClicked = (annotation) => {
+    let dataset = annotation.dataset;
+    modelViewer2.cameraTarget = dataset.target;
+    modelViewer2.cameraOrbit = dataset.orbit;
+    modelViewer2.fieldOfView = '45deg';
+  }
+
+  modelViewer2.querySelectorAll('button').forEach((hotspot) => {
+    hotspot.addEventListener('click', () => annotationClicked(hotspot));
+  });
+</script>
+
+<style type="text/css">
+  .view-button {
+      background: rgba(255, 255, 255, 0.537);
+      border-radius: 4px;
+      border: none;
+      box-sizing: border-box;
+   
+      color: rgba(0, 0, 0, 0.8);
+      display: block;
+      font-family: XTypewriter;
+      font-size: 12px;
+      font-weight: 700;
+      max-width: 128px;
+      overflow-wrap: break-word;
+      padding: 0.5em 1em;
+      position: absolute;
+      width: max-content;
+      height: max-content;
+      transform: translate3d(-50%, -50%, 0);
+    }
+</style>

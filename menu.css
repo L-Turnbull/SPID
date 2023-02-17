@@ -1,0 +1,151 @@
+/***** NAV *****/
+
+.hamburger:focus{
+    outline: none;
+}
+.hamburger {
+  padding: 15px 15px;
+  display: inline-block;
+  cursor: pointer;
+  transition-property: opacity, -webkit-filter;
+  transition-property: opacity, filter;
+  transition-property: opacity, filter, -webkit-filter;
+  transition-duration: 0.15s;
+  transition-timing-function: linear;
+  font: inherit;
+  color: inherit;
+  text-transform: none;
+  background-color: transparent;
+  border: 0;
+  position:absolute;
+  z-index:99;
+margin-left:90%;
+  overflow: visible; }
+  .hamburger:hover {
+    opacity: 0.7; }
+
+.hamburger-box {
+  width: 40px;
+  height: 24px;
+  display: inline-block;
+  position: absolute; }
+
+.hamburger-inner {
+  
+  display: block;
+  top: 50%;
+  margin-top: -2px;}
+
+  .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+    width: 40px;
+    height: 4px;
+    background-color: red;background: rgb(246,250,86);
+    background: linear-gradient(180deg, rgba(246,250,86,1) 0%, rgba(167,154,66,1) 0%, rgba(255,255,255,1) 26%, rgba(255,237,114,1) 42%, rgba(152,139,58,1) 62%, rgba(208,193,98,1) 76%, rgba(69,69,69,1) 100%);
+        border-radius: 4px;
+    position: absolute;
+    transition-property: -webkit-transform;
+    transition-property: transform;
+    transition-property: transform, -webkit-transform;
+    transition-duration: 0.15s;
+    transition-timing-function: ease; }
+  .hamburger-inner::before, .hamburger-inner::after {
+    content: "";
+    display: block; }
+  .hamburger-inner::before {
+    top: -10px; }
+  .hamburger-inner::after {
+    bottom: -10px; }
+
+
+.cbp-spmenu {
+  background: rgb(27,27,27);
+  background: linear-gradient(90deg, rgba(27,27,27,1) 0%, rgba(68,68,68,1) 11%, rgba(69,69,69,1) 100%);
+	position: fixed;
+  width:15vw;
+}
+.cbp-spmenu a {
+	display: block;
+  margin-top:2vh;
+	color: #fff;
+  padding-top:5vh;
+	font-size: 1.5em;
+	font-weight: 300;
+  text-decoration:none;
+}
+.cbp-spmenu-vertical {
+	width: 20vw;
+	height: 100%;
+	top: 0;
+	z-index: 1000;
+}
+.cbp-spmenu-vertical a {
+/* 	border-bottom: 1px solid #258ecd; */
+	padding: 1.2em;
+}
+.cbp-spmenu-right {
+	right: -20vw;
+}
+.cbp-spmenu-right.cbp-spmenu-open {
+	right: 0px;
+}
+.cbp-spmenu {
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	transition: all 1s ease;
+}
+nav a{
+ text-align: center;
+}
+
+
+@media(min-width:400px){
+
+  .cbp-spmenu a {
+    display: block;
+    margin-top:2vh;
+    color: #fff;
+    padding-top:5vh;
+    font-size: 0.8em;
+    font-weight: 300;
+    text-decoration:none;
+  }
+  }
+
+  @media(min-width:600px){
+
+    .cbp-spmenu a {
+      display: block;
+      margin-top:2vh;
+      color: #fff;
+      padding-top:5vh;
+      font-size: 1.2em;
+      font-weight: 300;
+      text-decoration:none;
+    }
+    }
+
+    @media(min-width:800px){
+
+      .cbp-spmenu a {
+        display: block;
+        margin-top:2vh;
+        color: #fff;
+        padding-top:5vh;
+        font-size: 1.3em;
+        font-weight: 300;
+        text-decoration:none;
+      }
+      }
+
+      @media(min-width:1000px){
+
+        .cbp-spmenu a {
+          display: block;
+          margin-top:2vh;
+          color: #fff;
+          padding-top:5vh;
+          font-size: 1.5em;
+          font-weight: 300;
+          text-decoration:none;
+        }
+        }

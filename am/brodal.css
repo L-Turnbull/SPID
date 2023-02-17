@@ -1,0 +1,266 @@
+.view-page {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  height:100vh;
+  width:100vw;
+  transition: all 1s ease;
+}
+.view-page main {
+  min-height: calc(100vh - 54px);
+
+}
+.view-page main .container {
+  min-height: calc(100vh - 70px);
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(43, 183, 226);
+}
+
+/*background-color-and wrapper*/
+.brodal {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  display: none;
+  transition:all 1s ease;
+  transform-style: preserve-3d;
+  perspective: 900px;
+  z-index:99;
+
+}
+.brodal .brodal-containertwo.small{
+  display: none;
+  transform: scale(0);
+width:0px;
+height:0px;
+transition:all 1s ease;
+}
+/*THE brodal*/
+.brodal .brodal-container {
+  display: none;
+  max-width: 90vw;
+  margin: 0 auto;
+
+  border-radius: 7px;
+
+filter:drop-shadow(-2px 2px 2px);
+margin-top:0%;
+margin: left 50%;
+transform: translateX(-10%) translateY(-50%);
+}
+.brodal .brodal-containertwo {
+
+  max-width: 60vw;
+  margin: 0 auto;
+
+  border-radius: 7px;
+
+filter:drop-shadow(-2px 2px 2px);
+margin-top:0%;
+margin: left 50%;
+transform: translateX(-10%) translateY(-50%);
+}
+.brodal .brodal-containertwo.small{
+  display: none;
+  transform: scale(0);
+width:0px;
+height:0px;
+transition:all 1s ease;
+}
+/*THE brodal*/
+.brodal .brodal-container {
+  display: none;
+  max-width: 90vw;
+  margin: 0 auto;
+
+  border-radius: 7px;
+
+filter:drop-shadow(-2px 2px 2px);
+margin-top:0%;
+margin: left 50%;
+transform: translateX(-10%) translateY(-50%);
+}
+
+.brodal-header {
+  transform: rotate(180deg) translateX(-500px) ;
+  transition: all 1s ease;
+  position:absolute;
+  z-index:14;
+  width:10%;
+  height:10%;
+
+  background-color: rgb(240, 238, 209);
+  filter:drop-shadow(-2px 2px 2px) grey;
+  animation: animateheader 1s ease;
+}
+.brodal .brodal-header {
+  position: absolute;
+  transform: translateX(90vw) scale(1);
+  color: #000000;
+  opacity:1;
+  z-index:15;
+  width:15%;
+  height:15%;
+
+  margin-top:-2%;
+  background-color: rgb(240, 238, 209);
+  filter:drop-shadow(-2px 2px 2px) grey;
+  text-align: center;
+}
+
+.brodal .brodal-container .brodal-footer {
+  margin-top: 20px;
+}
+
+.brodal .brodal-containertwo .brodal-footer {
+  margin-top: 20px;
+}
+
+.brodal-close{
+  opacity:0;
+  transition: all 0.5s ease;
+  transform: scale(0) translateX(-400px) translateY(-200px);
+  color:white;
+  z-index:105;
+
+  
+}
+.brodal .brodal-close {
+  position: absolute;
+opacity:1;
+  cursor: pointer;
+  transform: scale(1);
+  z-index:105;
+}
+
+.small{
+  transition:all 1s ease;
+background-color: white;
+  transform:rotate(180deg)scale(0)translateX(-800px);
+  opacity: 0;
+  height:0px;
+  width:0px;
+  margin-top:-800px;
+  font-size: 0em;
+  z-index:1;
+  clip-path: polygon(84% 74%, 61% 89%, 78% 71%, 86% 60%, 63% 45%, 75% 58%, 80% 65%, 81% 84%, 69% 97%, 64% 100%, 76% 84%, 76% 77%, 71% 64%, 59% 52%, 71% 68%, 66% 80%, 59% 91%, 46% 91%, 38% 89%, 31% 70%, 33% 64%, 40% 51%, 26% 67%, 24% 88%, 40% 100%, 23% 92%, 20% 79%, 19% 71%, 26% 58%, 36% 46%, 14% 59%, 37% 87%, 28% 83%, 7% 58%, 35% 40%, 15% 40%, 4% 35%, 31% 10%, 12% 34%, 21% 35%, 34% 35%, 38% 36%, 10% 23%, 10% 16%, 37% 0, 14% 18%, 20% 22%, 36% 28%, 37% 16%, 43% 8%, 45% 16%, 57% 15%, 59% 8%, 63% 25%, 80% 18%, 84% 12%, 72% 0, 91% 8%, 89% 23%, 63% 33%, 86% 29%, 78% 15%, 65% 0, 90% 14%, 97% 32%, 61% 39%, 95% 57%);
+
+}
+.brodal .small{
+  transition:all 1s ease;
+background-color: white;
+  transform:rotate(0deg)scale(1)translateX(0px);
+  display:inline-block;
+  filter:drop-shadow(-2px 2px 2px);
+  height:15%;
+  width:15%;
+  text-align: center;
+  font-size: 2em;
+  animation: animatebabytwo 1s ease;
+  animation-delay:0;
+  animation-fill-mode: both;
+  opacity:1;
+  z-index:14;
+  clip-path: polygon(84% 74%, 61% 89%, 78% 71%, 86% 60%, 63% 45%, 75% 58%, 80% 65%, 81% 84%, 69% 97%, 64% 100%, 76% 84%, 76% 77%, 71% 64%, 59% 52%, 71% 68%, 66% 80%, 59% 91%, 46% 91%, 38% 89%, 31% 70%, 33% 64%, 40% 51%, 26% 67%, 24% 88%, 40% 100%, 23% 92%, 20% 79%, 19% 71%, 26% 58%, 36% 46%, 14% 59%, 37% 87%, 28% 83%, 7% 58%, 35% 40%, 15% 40%, 4% 35%, 31% 10%, 12% 34%, 21% 35%, 34% 35%, 38% 36%, 10% 23%, 10% 16%, 37% 0, 14% 18%, 20% 22%, 36% 28%, 37% 16%, 43% 8%, 45% 16%, 57% 15%, 59% 8%, 63% 25%, 80% 18%, 84% 12%, 72% 0, 91% 8%, 89% 23%, 63% 33%, 86% 29%, 78% 15%, 65% 0, 90% 14%, 97% 32%, 61% 39%, 95% 57%);
+  
+}
+
+.bro-baby{
+  background-color: grey;
+opacity:0;
+animation: animatebaby 1s ease;
+animation-delay: 1000ms;
+  transition:all 1s ease;
+  z-index: 13;
+}
+.brodal .bro-baby {
+ 
+  background-color: grey;
+opacity:1;
+  transform: translateX(5px) scale(1);
+  font-weight: 900;
+  color: #000000;
+  opacity:1;
+  height:300px;
+  width:200px;
+  animation: animatebaby 1s ease;
+  animation-delay: 1000ms;
+  z-index: 9913;
+
+
+}
+
+.bro-babytwo{
+ 
+opacity:0;
+animation: animatebabytwo 1s ease;
+
+  transition:all 1s ease both;
+  z-index: 13;
+
+  
+}
+.brodal .bro-babytwo {
+  filter:drop-shadow(-3px 3px 3px);
+
+opacity:1;
+  transform: translateX(5px) scale(1);
+  font-weight: 900;
+  color: #000000;
+  opacity:1;
+  height:20vh;
+  width:30vw;
+  animation: animatebabytwo 1s ease both;
+  margin-left:0.5vw; margin-top:2vh; filter:drop-shadow(-2px 2px 2px black);
+  z-index: 119;
+  height:15vw !important; width:15vw;
+
+}
+@keyframes animatebaby {
+    
+  0% {
+    transform: translateX(-800px) rotate(-540deg);
+    opacity:0;
+
+
+  }
+
+  100% {
+    transform: translateX(0) rotate(0deg);
+    opacity:1;
+   
+  
+  }
+}
+@keyframes animatebabytwo {
+    
+  0% {
+    transform:translateY(-800px) rotate(-540deg);
+    opacity:0;
+  }
+  100% {
+    transform:translateY(0) rotate(0deg);
+    opacity:1;
+  }
+}
+
+@keyframes animateheader {
+    
+  0% {
+    transform:translateX(-80vw) rotate3d(20 40 60 -540deg);
+    opacity:0;
+  }
+  100% {
+    transform:translateX(180vw) rotate(0deg);
+    opacity:1;
+    
+  }
+}
+
